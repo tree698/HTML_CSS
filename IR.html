@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Replacement</title>
+
+    <style media="screen">
+      .clip_wrap {
+        position: relative;
+        width: 300ox;
+        height: 300px;
+        margin: 50px;
+        border: 1px solid red;
+      }
+
+      .clip_target {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: red;
+        clip: rect(10px, 180px, 180px, 30px);
+      }
+
+        .clip_wrap1 {
+          position: relative;
+          width: 300ox;
+          height: 300px;
+          margin: 50px;
+          border: 1px solid blue;
+        }
+
+        .clip_target1 {
+          position: absolute;
+          clip: rect(0, 0, 0, 0);
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          backgroud: red;
+          overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+
+<!-- clip 사용법 알기 -->
+<!-- clip: rect(top, right, bottom, left) 마스크 효
+position 값이 absolute 혹은 fixed 요소에 사용
+overflow 속성이 visible일 경우 적용 안됨 -->
+
+    <div class="clip_wrap">
+      <div class="clip_target">
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+      </div>
+    </div>
+
+<!-- 요소 가리기  -->
+    <div class="clip_wrap1">
+      <div class="clip_target1">
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+        clip으로 요소 가리기 <br>
+      </div>
+    </div>
+  </body>
+</html>
