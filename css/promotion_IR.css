@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.wrap {
+  position: relative;
+  width: 1020px;
+  height: 650px;
+  margin: 0 auto;
+  background: url(../image/promotion.png) no-repeat 0 0;
+}
+
+ol {
+  list-style: none;
+}
+
+body, ol {
+  margin: 0;
+  padding: 0;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.link_point {
+  position:absolute;
+  width: 97px;
+  height: 21px;
+  left: 137px;
+  bottom: 183px;
+  /* background: red;
+  opacity: 0.5; */
+}
+
+.link_join {
+  position:absolute;
+  width: 272px;
+  height: 55px;
+  left: 320px;
+  bottom: 107px;
+  /* background: blue;
+  opacity: 0.5; */
+}
