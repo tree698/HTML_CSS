@@ -1,0 +1,32 @@
+@@charset "UTF-8";
+
+
+.box_wrap {
+  width: 400px;
+  margin: 0px;
+}
+
+.box_parent {
+  border: 3px dotted blue;
+  padding: 10px;
+
+  /*자식인 .box들의 높이 값이 고정일 경우 같은 높이값을 부여*/
+  height: 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.box1 {
+  float: left;
+  background: green;
+}
+
+.box2 {
+  float: right;
+  background: pink;
+}
