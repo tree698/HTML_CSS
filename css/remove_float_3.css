@@ -1,1 +1,41 @@
 @@charset "UTF-8";
+
+.box_wrap {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.box_parent {
+  border: 3px dotted blue;
+  padding: 10px;
+
+/*자식 요소의 float이 해제되
+부모 요소 범위를 벗어나는 팝업 같은 것이 있을 경우 팝업이 표시 안됨*/
+  overflow: hidden;
+}
+
+.box {
+  width: 100Px;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.box1 {
+  float: left;
+  background-color: green;
+}
+
+.box2 {
+  float: right;
+  background-color: pink;
+}
+
+.pop {
+  position: absolute;
+  right: -50px;
+  top: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+}

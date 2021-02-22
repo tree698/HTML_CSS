@@ -1,1 +1,34 @@
+@@charset "UTF-8";
 
+.box_wrap {
+  width: 400px;
+  margin: 0px;
+}
+
+.box_parent {
+  border: 3px dotted blue;
+  padding: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.box1 {
+  float: left;
+  background-color: green;
+}
+
+.box2 {
+  float: right;
+  background-color: pink;
+}
+
+.box_parent::after{
+  display: block;
+  clear: both;
+  content: '';
+}

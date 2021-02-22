@@ -1,1 +1,35 @@
 @@charset "UTF-8";
+
+.box_wrap{
+  width: 400px;
+  margin: 0px;
+}
+
+.box_parent {
+  border: 3px dotted blue;
+  padding: 10px;
+}
+
+.box {
+  width: 100px;
+  text-align: center;
+  height: 100px;
+  color: #fff
+}
+
+.box1 {
+  float: left;
+  background-color: green;
+}
+
+.box2 {
+  float: right;
+  background-color: pink;
+
+}
+
+.clear {
+  /* 반드시 블록 요소이어야 함. span 대신 div 사용 가능 */
+  display: block;
+  clear: both;
+}
