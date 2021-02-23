@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2단 레이아웃 (float 사용)</title>
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <style media="screen">
+      html, body, .wrap {
+        height: 100%;
+      }
+      .header{
+        height: 100px;
+        background-color: lightgreen;
+      }
+
+      .container {
+        width: 800px;
+        min-height: 100%;
+        margin: -100px auto;
+        padding: 100px;
+        box-sizing: border-box;
+
+      }
+
+      .container:after {
+        display: block;
+        clear: both;
+        content: ' ';
+      }
+
+      .content{
+        width: 500px;
+        height: 300px;
+        background-color: lightsalmon;
+        float: left;
+      }
+
+      .aside{
+        width: 300px;
+        height: 300px;
+        background-color: lightpink;
+        float: left;
+      }
+
+      .footer {
+        height:100px;
+        background-color: lightblue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">header</div>
+      <div class="container">
+        <div class="content">content</div>
+        <div class="aside">aside</div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+
+  </body>
+</html>
