@@ -18,9 +18,9 @@
         width: 800px;
         min-height: 100%;
         margin: -100px auto;
-        padding: 100px;
+        padding: 100px 0;
         box-sizing: border-box;
-
+        position: relative;
       }
 
       .container:after {
@@ -41,6 +41,16 @@
         height: 300px;
         background-color: lightpink;
         float: left;
+      }
+
+      .aside:after {
+        width: 5px;
+        background-color: #000;
+        content: '';
+        position: absolute;
+        top: 100px;
+        right: 300px;
+        bottom: 100px;
       }
 
       .footer {
