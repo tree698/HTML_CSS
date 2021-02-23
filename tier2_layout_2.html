@@ -2,63 +2,49 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>2단 레이아웃 (float 사용)</title>
+    <title>2단 레이아웃 (display: table 이용)</title>
     <link rel="stylesheet" href="/css/reset.css">
 
     <style media="screen">
       html, body, .wrap {
         height: 100%;
       }
-      .header{
+      .header {
         height: 100px;
         background-color: lightgreen;
       }
 
-      .container {
+      .container{
+        display: table;
+        margin: -100px auto;
+        table-layout: fixed;
         width: 800px;
         min-height: 100%;
-        margin: -100px auto;
         padding: 100px 0;
         box-sizing: border-box;
-        position: relative;
       }
 
-      .container:after {
-        display: block;
-        clear: both;
-        content: ' ';
-      }
-
-      .content{
+      .content {
         width: 500px;
         height: 300px;
         background-color: lightsalmon;
-        float: left;
+        display: table-cell;
+        border-right: 3px solid #000;
       }
 
-      .aside{
-        width: 300px;
+      .aside {
+        with: 300px;
         height: 300px;
-        background-color: lightpink;
-        float: left;
-      }
-
-      .aside:after {
-        width: 2px;
-        background-color: #000;
-        content: '';
-        position: absolute;
-        top: 100px;
-        right: 300px;
-        bottom: 100px;
+        background-color: lightblue;
+        display: table-cell;
       }
 
       .footer {
-        height:100px;
-        background-color: lightblue;
+        height: 100px;
+        background-color: lightpink;
       }
-
     </style>
+
   </head>
   <body>
     <div class="wrap">
@@ -69,6 +55,5 @@
       </div>
       <div class="footer">footer</div>
     </div>
-
   </body>
 </html>
