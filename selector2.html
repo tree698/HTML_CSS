@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서구조관련 선택자</title>
+    <style>
+        strong + .list .i2 {
+            color: red;
+        }
+
+        /* .wrap .item .i2 {
+            color: red;
+        } */
+
+        /* div > .list .i2 {
+            color: red;
+        } */
+
+        /* .wrap .list .i2 {
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <strong>title</strong>
+        <p>description</p>
+        <ul class="list">
+            <li class="item i1">item 1</li>
+            <li class="item i2">item 2</li>
+            <li class="item i3">item 3</li>
+        </ul>
+    </div>
+</body>
+</html>
