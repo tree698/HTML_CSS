@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="/css/reset.css">
     <title>상단고정 레이아웃 2 (box-sizing)</title>
     <style>
+        html, body {
+            height: 100%;
+        }
         .wrap{
+            height: 100%;
             min-width: 800px;
             text-align: center;
         }
@@ -15,17 +19,27 @@
         .header{
             height: 100px;
             background-color:mediumpurple;
+            position: fixed;
+            top:0px; left: 0px; right: 0px;
+        }
+
+        .container {
+            min-height: 100%;
+            margin-top: -100px;
+            padding-top: 200px;
+            box-sizing: border-box;
         }
 
         .content {
             height: 300px;
             max-width: 1200px;
+            margin: 0 auto;
             background-color: mediumturquoise;
         }
 
         .footer {
             height: 100px;
-            background-color: midnightblue;
+            background-color: #191970;
         }
     </style>
 </head>
