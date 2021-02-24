@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <title>상단고정 레이아웃 2 (box-sizing)</title>
+    <style>
+        .wrap{
+            min-width: 800px;
+            text-align: center;
+        }
+
+        .header{
+            height: 100px;
+            background-color:mediumpurple;
+        }
+
+        .content {
+            height: 300px;
+            max-width: 1200px;
+            background-color: mediumturquoise;
+        }
+
+        .footer {
+            height: 100px;
+            background-color: midnightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">header</div>
+        <div class="container">
+            <div class="content">content</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

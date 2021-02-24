@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <title>상단고정 레이아웃 1</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        .wrap{
+            height: 100%;
+            min-width: 800px;
+            text-align: center;
+        }
+        .header{
+            height: 100px;
+            background-color: lightgreen;
+            position: fixed;
+            top: 0px; left: 0px; right: 0px;
+        }
+
+        .container{
+            min-height: 100%;
+            margin-top: -100px;
+        }
+
+        .content{
+            height: 300px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 200px;
+            background-color: lightsalmon;
+        }
+
+        .footer{
+            height: 100px;
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">header</div>
+        <div class="container">
+            <div class="content">content</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+    
+</body>
+</html>
