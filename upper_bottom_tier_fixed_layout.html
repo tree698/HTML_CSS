@@ -7,7 +7,46 @@
     <link rel="stylesheet" href="/css/reset.css">
     <title>상하단 고정 레이아웃</title>
     <style>
-        
+        html, body{
+            height: 100%;
+        }
+        .wrap{
+            min-width: 800px;
+            text-align: center;
+            height: 100%;
+        }
+
+        .header{
+            height: 100px;
+            background-color: mistyrose;
+            position: fixed;
+            top:0px; left:0px; right:0px;
+        }
+
+        .container {
+            min-height: 100%;
+
+            /* 상하단 고정이므로 끌어 내릴 것이 없다 */
+            /* margin: -100px 0; */
+            
+            padding: 100px 0;
+            box-sizing: border-box;
+            
+        }
+
+        .content{
+            height: 3300px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: olive;
+        }
+
+        .footer{
+            height: 100px;
+            background-color: orchid;
+            position: fixed;
+            bottom:0px; left:0px; right:0px;
+        }
     </style>
 </head>
 <body>
