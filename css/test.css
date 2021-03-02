@@ -1,6 +1,5 @@
 @charset 'UTF-8';
 
-/* 기본 스타일 */
 body {
     font-family: '돋움', dotum, Helvetica, sans-serif;
     font-size: 15px;
@@ -19,33 +18,32 @@ img {
 }
 
 h1 {
-    width:1000px;
+    width: 1000px;
     margin: 0 auto;
+    font-size: 20px;
+    line-height: 28px;
     padding: 20px 0;
-    font-size: 26px;
-    line-height: 38px;
-    font-weight: bold;
 }
 .main_wrap {
     background-color: #ececec;
 }
 .main_wrap .content {
+    position: relative;
     width: 1000px;
     margin: 0 auto;
     padding: 50px 0 20px;
-    position: relative;
 }
 .main_wrap .noti_txt {
+    position: absolute;
+    right: 0;
+    top: 20px;
     font-size: 12px;
     color: #7c7c7c;
-    position:absolute;
-    top: 20px;
-    right: 0;
 }
 .main_list li {
     float: left;
 }
-.main_list::after {
+.main_list:after {
     display: block;
     content: '';
     clear: both;
@@ -68,34 +66,36 @@ h1 {
 }
 .main_list .img_box::after {
     position: absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
     content: '';
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     border: 1px solid rgba(0, 0, 0, 0.05);
-    background-color: rgba(0, 0,0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .main_list .info {
     position: absolute;
     bottom: 20px;
     right: 20px;
     left: 20px;
-    color: #fff;
     overflow: hidden;
+    color: #fff;
 }
 .main_list .category {
     font-size: 14px;
-    line-height: 18px;;
+    line-height: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
+} 
 .main_list .title {
     font-size: 18px;
     line-height: 22px;
-    margin-top: 3px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
+    margin-top: 3px;
+} 
+
+
