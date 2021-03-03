@@ -234,11 +234,46 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.03);
     /* box-sizing: border-box; */
 }
+
+
+
+.sub_list .info_wrap {
+    position: relative;
+    margin-top: 10px;
+}
 .sub_list .info {
     height: 79px;
-    margin-top: 10px;
-    padding: 5px;
+    margin-left: 30px;
 }
+.sub_list .rank {
+    position: absolute;
+    top:0;
+    bottom: 1px;
+    width: 20px;
+    text-align: center;
+}
+.sub_list .rank .num {
+    display: block;
+    font-size: 22px;
+    line-height: 24px;
+}
+.sub_list .rank .change {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    font-size: 14px;
+    line-height: 18px;
+}
+.sub_list .rank .change::before {
+    display: inline-block;
+    content: '';
+    margin-right: 3px;
+}
+
+
+
+
 .sub_list .title {
     display: -webkit-box;
     overflow: hidden;
@@ -262,3 +297,20 @@ h1 {
     white-space: normal;
 }
 
+
+.sub_list .like {
+    position: absolute;
+    bottom: 0;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.sub_list .like::before {
+    position: absolute;
+    top: 5px;
+    left:0px;
+    content: '';
+    width: 11px;
+    height: 10px;
+    background: url(/image/like.png) no-repeat;
+}
