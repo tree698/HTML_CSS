@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+.change {
+    float: left;
+    /* margin: 50px; */
+    padding:10px;
+    /* background-color: hotpink; */
+    text-align: center;
+}
+.change::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    background-color: pink;
+}
+.up::after {
+    background: 
+    url(https://image.flaticon.com/icons/png/512/187/187154.png) 
+    no-repeat;
+    background-size: cover;
+}
+.down::after {
+    background: 
+    url(https://image.flaticon.com/icons/png/512/187/187142.png) 
+    no-repeat;
+    background-size: cover;
+}
+.blind {
+    overflow: hidden;
+    position: absolute;
+    clip:rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
