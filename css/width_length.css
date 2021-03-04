@@ -1,0 +1,16 @@
+.wrap {
+    width: 500px;
+    margin: 0.5px;
+    padding: 10px;
+    border: 15px solid red;
+}
+.box {
+    width: 60%;
+    padding: 20px;
+    border: 10px solid blakc;
+}
+.inner {
+    width: 30%;
+    padding: 5px;
+    background: pink;
+}
