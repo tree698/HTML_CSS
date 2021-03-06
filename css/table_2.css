@@ -1,0 +1,72 @@
+@charset 'UTF-8';
+
+table, th {
+    border: 1px solid #eaedef;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+/* 사각형이 붙어 있기에 2개 면만 그리면 된다 */
+td {
+    border-top: 1px solid #eaddef;
+    border-left: 1px solid #eaddef;
+}
+
+.blind {
+    overflow: hidden;
+    position: absolute;
+    clip: rect( 0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+table {
+    width: 590px;
+    table-layout: fixed;
+    margin: 50px auto;
+}
+th {
+    height: 25px;
+}
+
+/* div에 높이를 주었기 때문에 top에 위치 */
+.inner {
+    height: 80px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+.date {
+    font-weight: bold;
+}
+.text {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.holiday {
+    color: #f8585b;
+}
+.anniversary {
+    color: indigo;
+}
+.dimmed {
+    color: #e7e7e7;
+}
+
+/* inner에 패딩값 5px가 있으므로 6px를 준다 */
+.lunar {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 10px;
+    color:lightgray;
+}
+.today {
+    border: 1px solid red;
+    background-color: lightpink;
+}
+
