@@ -11,16 +11,20 @@
 table, th, td {
     /* border: 1px solid #000; */
     border-collapse: collapse;
+    font-size: 13px;
 }
 table {
-    width: 900px;
+    width: 500px;
     table-layout: fixed;
 }
 .col_age_sex {
     width: 90px;
 }
-table th {
-    height: 45px;
+tbody th {
+    height: 40px;
+}
+thead th {
+    padding: 5px 0;
 }
 th {
     font-weight: normal;
