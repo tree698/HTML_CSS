@@ -1,10 +1,42 @@
 @charset 'UTF-8';
 
+.blind {
+    overflow: hidden;
+    position: absolute;
+    clip: rect( 0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 table, th, td {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     border-collapse: collapse;
 }
 table {
     width: 900px;
     table-layout: fixed;
 }
+.col_age_sex {
+    width: 90px;
+}
+table th {
+    height: 45px;
+}
+th {
+    font-weight: normal;
+    /* vertical-align: top; */
+}
+.view, .rate, td {
+    text-align: right;
+}
+.th_man, .th_female {
+    background-color: #6dc3a6;
+}
+th, td {
+    border-bottom: 1px solid #ee7f30;
+}
+thead th {
+    border-bottom: 2px solid #ee7f30;
+}
+
+
