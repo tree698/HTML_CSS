@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/table_1.css">
+    <title>통계표 제작</title>
+</head>
+<body>
+    <table>
+        <caption>성별, 연령별 분포 목록</caption>
+        <colgroup>
+        <col span="2" class="col_age_sex">
+        <col span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">연령별</th>
+                <th scope="col">성별</th>
+                <th scope="col">조회수</th>
+                <th scope="col">비율</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2" scope="rowgroup">전체</th>
+                <th scope="row">남</th>
+                <td>0</td>
+                <td>0.0%</td>
+            </tr>
+            <tr>
+                <th scope="row">여</th>
+                <td>0</td>
+                <td>0.0%</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">0~12</th>
+                <th scope="rwo">남</th>
+                <td>0</td>
+                <td>0.0%</td>
+            </tr>
+            <tr>
+                <th scope="row">여</th>
+                <td>0</td>
+                <td>0.0%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
