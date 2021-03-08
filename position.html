@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/position.css">
+    <title>position</title>
+</head>
+<body>
+    <h1>position (offset 미지정)</h1>
+    <h2>static</h2>
+    <div class="parent">
+        <div class="sibling">Sibling</div>
+        <div class="child static">static</div>
+        <div class="sibling">Sibling</div>
+    </div>
+    <h2>relative</h2>
+    <div class="parent">
+        <div class="sibling">Sibling</div>
+        <div class="child relative">relative</div>
+        <div class="sibling">Sibling</div>
+    </div>
+    <h2>absoulte</h2>
+    <div class="parent">
+        <div class="sibling">Sibling</div>
+        <div class="child absoulte">absoulte</div>
+        <div class="sibling">Sibling</div>
+    </div>
+    <h2>fixed</h2>
+    <div class="parent">
+        <div class="sibling">Sibling</div>
+        <div class="child fixed">fixed</div>
+        <div class="sibling">Sibling</div>
+    </div>
+    <br><br><br><br><br><br>
+
+
+
+    <h1>position (offset 지정)</h1>
+    <h2>static</h2>
+    <div class="parent">
+        <div class="sibling">Sibling</div>
+        <div class="child_offset static">static<br>top:40, left:40</div>
+        <div class="sibling">Sibling</div>
+    </div>
+    <h2>relative</h2>
+    <div class="parent">
+        <div class="sibling">Sibling</div>
+        <div class="child_offset relative">relative<br>top:40, left:40</div>
+        <div class="sibling">Sibling</div>
+    </div>
+    <h2>absoulte</h2>
+    <div class="parent">
+        <div class="sibling">Sibling</div>
+        <div class="child_offset absoulte">absoulte<br>top:40, left:80</div>
+        <div class="sibling">Sibling</div>
+    </div>
+    <h2>fixed</h2>
+    <div class="parent">
+        <div class="sibling">Sibling</div>
+        <div class="child_offset fixed">fixed<br>top:100, left:40</div>
+        <div class="sibling">Sibling</div>
+    </div>
+</body>
+</html>

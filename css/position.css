@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+.parent {
+    border: 1px dotted #000;
+    padding: 10px;
+}
+.sibling {
+    font-size: 16px;
+    padding: 5px;
+    background:#eee;
+    text-align: center;
+}
+.child, .child_offset {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    background: lightblue;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #333;
+    font-size: 14px;
+}
+
+
+
+
+/* .static {
+    position: static;
+}
+.relative {
+    position: relative;
+}
+.absoulte {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+} */
+
+.child_offset {
+    background: yellow;
+}
+
