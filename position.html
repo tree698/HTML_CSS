@@ -24,7 +24,10 @@
     <h2>absoulte</h2>
     <div class="parent">
         <div class="sibling">Sibling</div>
-        <div class="child absoulte">absoulte</div>
+
+        <!-- absoulte fixed 는 block 요소를 갖는다 -->
+        <!-- absoulte 는 부모가 relative absoulte fixed 일때 offset 값이 작동함 -->
+        <span class="child absoulte">absoulte</span>
         <div class="sibling">Sibling</div>
     </div>
     <h2>fixed</h2>
@@ -33,7 +36,7 @@
         <div class="child fixed">fixed</div>
         <div class="sibling">Sibling</div>
     </div>
-    <br><br><br><br><br><br>
+    <div class="test">fixed</div>
 
 
 
@@ -41,25 +44,28 @@
     <h2>static</h2>
     <div class="parent">
         <div class="sibling">Sibling</div>
-        <div class="child_offset static">static<br>top:40, left:40</div>
+        <div class="child_offset static" style="top:40px;left:40px">static<br>top:40, left:40</div>
         <div class="sibling">Sibling</div>
     </div>
     <h2>relative</h2>
     <div class="parent">
         <div class="sibling">Sibling</div>
-        <div class="child_offset relative">relative<br>top:40, left:40</div>
+        <div class="child_offset relative" style="top:40px;left:40px">relative<br>top:40, left:40</div>
         <div class="sibling">Sibling</div>
     </div>
     <h2>absoulte</h2>
-    <div class="parent">
+    <div class="parent" style="position: relative;">
         <div class="sibling">Sibling</div>
-        <div class="child_offset absoulte">absoulte<br>top:40, left:80</div>
+
+        <!-- absoulte fixed 는 block 요소를 갖는다  -->
+        <!-- absoulte 는 부모가 relative absoulte fixed 일때 offset 값이 작동함 -->
+        <span class="child_offset absoulte" style="top:40px;left:80px">absoulte<br>top:40, left:80</span>
         <div class="sibling">Sibling</div>
     </div>
     <h2>fixed</h2>
-    <div class="parent">
+    <div class="parent" style="position: relative;">
         <div class="sibling">Sibling</div>
-        <div class="child_offset fixed">fixed<br>top:100, left:40</div>
+        <div class="child_offset fixed" style="top:100px;right:40px">fixed<br>top:100, right:40</div>
         <div class="sibling">Sibling</div>
     </div>
 </body>

@@ -20,11 +20,7 @@
     border: 1px solid #333;
     font-size: 14px;
 }
-
-
-
-
-/* .static {
+.static {
     position: static;
 }
 .relative {
@@ -35,9 +31,22 @@
 }
 .fixed {
     position: fixed;
-} */
+}
 
 .child_offset {
     background: yellow;
 }
 
+.test {
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.3;
+    font-size: 60px;
+    color: #fff;
+}
