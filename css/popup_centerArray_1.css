@@ -1,0 +1,73 @@
+@charset 'UTF-8';
+
+/* body {
+    position: relative;
+} */
+.content {
+    height: 5000px;
+}
+.popup {
+    /* position: absolute; */
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+}
+.popup_layer {
+    width: 300px;
+
+    /* 고정값이므로 min-height가 아님 */
+    height: 150px;
+    padding-bottom: 50px;
+    background: #fff;
+
+    /* z-index는 position 값을 주어야 하고 static만 아니면 됨 */
+    z-index: 1;
+
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.popup_dimmed {
+    background: #000;
+    opacity: 0.3;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.button_area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    overflow: hidden;
+}
+.btn {
+    float: left;
+    border: none;
+    height: 100%;
+    width: 50%;
+    background: lightpink;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* .button_area {
+    content: '';
+    display: block;
+    overflow: hidden;
+} */
+.btn.no {
+    background: lightblue;
+}
+.text_area {
+    text-align: center;
+    padding: 50px 30px 30px;
+}
