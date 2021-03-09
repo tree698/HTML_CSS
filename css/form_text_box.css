@@ -33,14 +33,14 @@
 }
 
 .text_form input[type=password]::placeholder {
-    color:lightcoral;
+    color:lightgreen;
     opacity: 1;
 }
 .text_form input[type=password]:-ms-placeholder {
-    color:lightcoral;
+    color:lightgreen;
 }
 .text_form input[type=password]::-ms-placeholder {
-    color: lightcoral;
+    color: lightgreen;
 }
 
 .textarea textarea {
