@@ -1,0 +1,97 @@
+@charset 'UTF-8';
+
+h1, .file_form {
+    /* text-align: center; */
+}
+
+/* .file_form input {
+    display: none;
+} */
+
+.file_form {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border: 1px solid blue;
+    position: relative;
+    line-height: 40px;
+}
+
+.file_form::after {
+    width: 50px;
+    height: 40px;
+    /* display: block; */
+    background-color: blue;
+    content: '파일 찾기';
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    text-align: center;
+}
+
+.file_form .text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    padding: 0 50px 0 10px;
+}
+
+.file_form input {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    /* background-color: #000; */
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+}
+
+
+
+/* .file_form2 input {
+    display: none;
+} */
+.file_form2 {
+    width: 100px;
+}
+.file_form2 .img {
+    width: 100px;
+    height: 100px;
+    background: url(/image/default.png) no-repeat;
+    border-radius: 50%;
+    background-size: 100px;
+    position: relative;
+}
+.file_form2 .img::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #000;
+    border-radius: 50%;
+
+    content: '';
+}
+.file_form2 .file {
+    width: 82px;
+    height: 24px;
+    background: url(/image/btn_file.jpg) no-repeat;
+    margin: 10px auto 0;
+
+    position: relative;
+}
+.file_form2 input {
+    position: absolute;
+    opacity: 0;
+
+    width: 100%;
+    height: 24px;
+    /* background-color: #000; */
+}
