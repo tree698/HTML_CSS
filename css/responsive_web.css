@@ -3,7 +3,9 @@
 a {
     text-decoration: none;
 }
-.wrap {
+
+
+/* .wrap {
     width: 900px;
     margin: 0 auto;
     border: 1px solid #ddd;
@@ -14,62 +16,125 @@ header {
     background-color: lightpink;
     line-height: 70px;
 }
-header .logo {
+.logo {
     color: #fff;
     font-size: 20px;
     display: inline-block;
     margin-left: 30px;
 }
-header nav {
+nav {
     display: inline-block;
     float: right;
 }
-header::after {
-    
-}
-header nav a {
+nav a {
     font-size: 20px;
     color: #fff;
     margin-right: 20px;
+} */
+
+
+
+header {
+    background-color: lightpink;
+    padding: 20px;
+    overflow: hidden;
+}
+.logo {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+}
+nav {
+    float: right;
+}
+nav a {
+    font-size: 20px;
+    color: #fff;
+    padding: 0 5px;
 }
 
 
-section li {
+
+/* section {
+    width: 900px;
+    margin: 0 auto;
+}
+li {
     float: left;
 }
-section .list::after {
+.list::after {
     display: block;
     clear: both;
     content: '';
 }
-section a img {
+a img {
     width: 166px;
     height: 166px;
 }
-section .list {
+.list {
     margin: 60px 0;
 }
-section .inner {
+.inner {
     display: block;
     border: 1px solid #000;
 }
-
-section li:nth-child(5n+1) {
+li:nth-child(5n+1) {
     margin: 0 10px 10px 10px;
 }
-section li + li {
+li + li {
     margin: 0 10px 10px 0;
 }
-
-
-section .title {
+.title {
     text-align: center;
+    font-size: 14px;
+    color: #555;
     padding: 5px 0;
 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+} */
+
+
+
+section {
+    max-width: 900px;
+    margin: 50px auto;
 }
+.list {
+    /* width: 100%;  굳이 필요없다  */
+    overflow: hidden;
+    margin: -5px;
+}
+li {
+    float: left;
+    width: 20%;
+    /* margin: 5px;  한 줄에 5개가 올 수 없다 */
+}
+.inner {
+    display: block;
+    border: 1px solid #000;
+    /* inner 사이즈가 안쪽으로 줄어든다  */
+    margin: 5px;         
+}
+.thumb img {
+    width: 100%;
+    height: auto;
+    /* vertical-align: top; */
+}
+.title {
+    font-size: 14px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+
+
 
 
 footer {
