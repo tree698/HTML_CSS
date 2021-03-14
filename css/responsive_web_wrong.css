@@ -4,6 +4,36 @@ a {
     text-decoration: none;
 }
 
+
+/* .wrap {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+header {
+    width: 100%;
+    height: 70px;
+    background-color: lightpink;
+    line-height: 70px;
+}
+.logo {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 30px;
+}
+nav {
+    display: inline-block;
+    float: right;
+}
+nav a {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 20px;
+} */
+
+
+
 header {
     background-color: lightpink;
     padding: 20px;
@@ -24,11 +54,52 @@ nav a {
 }
 
 
+
+/* section {
+    width: 900px;
+    margin: 0 auto;
+}
+li {
+    float: left;
+}
+.list::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+a img {
+    width: 166px;
+    height: 166px;
+}
+.list {
+    margin: 60px 0;
+}
+.inner {
+    display: block;
+    border: 1px solid #000;
+}
+li:nth-child(5n+1) {
+    margin: 0 10px 10px 10px;
+}
+li + li {
+    margin: 0 10px 10px 0;
+}
+.title {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+
+
 section {
     max-width: 900px;
     margin: 50px auto;
-    /* 반응형 웹으로인해 가로 크기가 줄어 들 경우 스크롤 생성 방지 */
-    overflow: hidden;
 }
 .list {
     /* width: 100%;  굳이 필요없다  */
@@ -62,6 +133,10 @@ li {
 }
 
 
+
+
+
+
 footer {
     width: 100%;
     height: 40px;
@@ -72,51 +147,3 @@ footer {
     line-height: 40px;
 }
 
-@media screen and (max-width:768px), screen and (max-height:768px) and (orientation:landscape) {
-    header {
-        background-color: lightseagreen;
-    }
-    .logo {
-        float: none;
-        display: block;
-        font-size: 40px;
-        text-align: center;
-
-        width: 100px;
-        margin: 0 auto;
-    }
-    nav {
-        float: none;
-        white-space: nowrap;
-        overflow-x: scroll;
-        overflow-y: hidden;
-
-        margin-top: 20px;
-    }
-    nav a {
-        font-size: 25px;
-    }
-    footer {
-        background-color: lightcoral;
-        color: #fff;
-    }
-    li {
-        width: 25%;
-    }
-    .inner {
-        margin: 4px;
-        position: relative;
-    }
-    .list {
-        margin: -4px;
-    }
-    .title {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0,0,0,0.2);
-
-        padding: 10px 0;
-    }
-}
