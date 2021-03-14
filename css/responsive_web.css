@@ -23,6 +23,10 @@ nav a {
     padding: 0 5px;
 }
 
+.gnb_menu {
+    display: none;
+}
+
 
 section {
     max-width: 900px;
@@ -118,5 +122,70 @@ footer {
         background: rgba(0,0,0,0.2);
 
         padding: 10px 0;
+    }
+}
+
+
+@media screen and (max-width:375px), screen and (max-height:375px) and (orientation: :landscape) {
+    header {
+        padding: 10px 0;
+    }
+    nav {
+        
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        bottom: 0;
+        z-index: 10px;
+        width: 200px;
+        margin: 0;
+        background-color: lightslategray;
+    }
+    nav a {
+        display: block;
+        padding: 20px 10px;
+        font-size: 20px;
+        border-bottom: 1px solid #fff;
+    }
+    .gnb_menu {
+        position: absolute;
+        top:12px;
+        left: 12px;
+        display: block;
+        width: 40px;
+        height: 35px;
+        font-size: 1px;
+        color: transparent;
+        background: linear-gradient(#fff 50%, transparent 50%);
+        background-size: 100% 10px;
+    }
+    section {
+        margin: 0;
+    }
+    .list li {
+        width: 100%;
+    }
+    .inner {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        margin: 0;
+        border: none;
+        border-top: 1px solid #000;
+    }
+    .thumb {
+        display: table-cell;
+        position: relative;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        vertical-align: middle;
+        background-color: #fff;
+        padding: 8px;
+        color: #000;
+        text-overflow: inherit;
+        white-space: inherit;
+        text-align: left;
     }
 }
