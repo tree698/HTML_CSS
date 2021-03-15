@@ -1,6 +1,8 @@
 @charset 'UTF-8';
 
-
+body {
+    font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
+}
 header {
     height: 120px;
     background-color: #000;
