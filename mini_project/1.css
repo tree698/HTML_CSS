@@ -1,0 +1,56 @@
+@charset 'UTF-8';
+
+
+header {
+    height: 120px;
+    background-color: #000;
+}
+header h1 {
+    width: 1080px;
+    height: 120px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 120px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+nav {
+    width: 1080px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+.nav_list {
+    overflow: hidden;
+}
+nav .item {
+    float: left;
+    width: 32%;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    text-align: center;
+}
+.nav_list li + li {
+    margin-left: 14px;
+}
+.nav_list .red:hover {
+    background-color: red;
+}
+.nav_list .green:hover {
+    background-color: green;
+}
+.nav_list .blue:hover {
+    background-color: blue;
+}
+nav p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid #454545;
+    margin: 0 auto;
+}
+section {
+    width: 980px;
+    margin: 0 auto;
+}
