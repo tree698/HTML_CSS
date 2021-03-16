@@ -4,76 +4,51 @@ body {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
 }
 header {
-    height: 120px;
-    background-color: #000;
+    height: 66px;
+    background: rgba(64,64,64,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-header h1 {
-    width: 1000px;
-    height: 120px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 120px;
-    margin: 0 auto;
-}
-nav {
+.head_wrap {
     width: 1080px;
     margin: 0 auto;
-}
-.nav_list {
+    line-height: 66px;
     overflow: hidden;
-    padding: 0 40px;
 }
-nav .item {
+.head_wrap .logo {
     float: left;
-    width: 322px;
-    border: 1px solid #d1d1d1;
-    font-size: 16px;
-    text-align: center;
-    padding: 8px 0;
-    margin: 40px 0;
+    padding-left: 30px;
+    display: block;
 }
-.nav_list li + li {
-    margin-left: 14px;
+.head_wrap .member {
+    float: right;
+    padding-right: 50px;
+    font-size: 24px;
 }
-.nav_list .red:hover {
+.head_wrap .member:hover {
     font-weight: bold;
-    border: 1px solid #454545;
-    background-color: red;
 }
-.nav_list .green:hover {
-    font-weight: bold;
-    border: 1px solid #454545;
-    background-color: green;
-}
-.nav_list .blue:hover {
-    font-weight: bold;
-    border: 1px solid #454545;
-    background-color: blue;
-}
-nav p {
-    width: 1000px;
-    margin: 0 auto;
-    padding-bottom: 13px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    border-bottom: 1px solid #454545;
-}
-
-
 
 
 
 section {
-    width: 980px;
+    background: url(../image/section_store.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.sec_wrap {
+    width: 1000px;
     margin: 0 auto;
     overflow: hidden;
+}
+.sec_list {
+    margin: 300px auto 180px;
 }
 .sec_list li {
     float: left;
     width: 230px;
-    margin: 40px 20px 140px 0;
+    margin: 0 20px 80px 0;
 }
 .sec_list li:nth-child(4n+4) {
     margin-right: 0px;
@@ -110,19 +85,15 @@ section {
     display: block;
     text-align: center;
 }
-
-
 .image_wrap:hover  .dimmed{
     display: block;
 }
 .thumb_img:focus {
-   outline: 0;
+    outline: 0;
 }
 .thumb_img:focus + .dimmed{
     display: block;
- }
-
-
+}
 .sec_list .name {
     font-size: 20px;
     color: #1b1d21;
