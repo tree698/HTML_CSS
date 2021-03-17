@@ -39,24 +39,49 @@ section .inner {
     border: 1px solid #d1d1d1;
     background-color: #fafafa;
 }
-.text_form, .textarea {
+section .text_form, .textarea {
     font-size: 14px;
     color: #000;
     font-weight: bold;
     margin: 20px 20px 0 20px;
 }
-.text_form input {
+section .text_form input {
     width: 912px;
     font-size: 12px;
     color:#000;
     margin-top: 7px;
 }
-.textarea textarea {
+
+
+
+
+section .hobby {
+    font-size: 12px;
+    color: #000;
+    margin: 20px 20px 0 20px;
+}
+section .hobby p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+section .hobby label {
+    margin-right: 66px;
+}
+section .textarea textarea {
     width: 912px;
     font-size: 12px;
     color:#000;
     resize: none;
     margin-top: 7px;
+}
+section .join {
+    width: 920px;
+    border: 1px solid #08a600;
+    background-color: #4ec53d;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0 20px 20px;
 }
 
 
