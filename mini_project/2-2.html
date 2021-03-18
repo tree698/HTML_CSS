@@ -32,15 +32,54 @@
                         <label for="name" class="input">이름</label>
                         <input type="text" id="name">
                     </div>
-
-                    <!-- <div>
-                        <label for="birth" class="input">생년월일</label>
-                    <input type="text" id="birth">
-                    </div> -->
-
-
-
-
+                    <div class="birth">
+                        <p>생년월일</p>
+                        <select class="select yr">
+                            <option>년도</option>
+                            <option value="01">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                            <option value="06">6</option>
+                            <option value="07">7</option>
+                            <option value="08">8</option>
+                            <option value="09">9</option>                                    
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select class="select mm">
+                            <option>월</option>
+                            <option value="01">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                            <option value="06">6</option>
+                            <option value="07">7</option>
+                            <option value="08">8</option>
+                            <option value="09">9</option>                                    
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select class="select dd">
+                            <option>일</option>
+                            <option value="01">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                            <option value="06">6</option>
+                            <option value="07">7</option>
+                            <option value="08">8</option>
+                            <option value="09">9</option>                                    
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
                     <div class="radio_box">
                         <p>성별</p>
                         <input type="radio" id="male" name="gender" value="male">
@@ -53,10 +92,20 @@
                         <input type="email" id="email" placeholder="이메일 주소에'@'를 포함해 주세요">
                     </div>
                     <div class="text_form">
-                        <label for="cellPhone" class="input">휴대전화</label>
+                        <label for="cellPhone" class="input">휴대전화</label><br>
                         <input type="tel" id="cellPhone" placeholder="숫자만 입력해 주세요">
-                        <input type="button" value="인증번호 받기" class="join">
-                        <input type="tel" id="cellPhone" placeholder="인증번호를 입력해주세요">
+
+
+                        
+                        <input type="button" id="cellPhone2" value="인증번호 받기">
+                        <label for="cellPhone2" class="input"></label><br>
+
+
+
+
+
+
+                        <input type="text" id="authentic" placeholder="인증번호를 입력해주세요">
                     </div>
                     <div class="hobby">
                         <p>취미</p>
