@@ -21,6 +21,8 @@ header {
 }
 
 
+
+
 section .outer {
     width: 1000px;
     margin: 0 auto;
@@ -52,18 +54,18 @@ section .text_form input {
     margin-top: 7px;
 }
 
-
-
-
-section .hobby {
+section .radio_box, section .hobby {
     font-size: 12px;
     color: #000;
     margin: 20px 20px 0 20px;
 }
-section .hobby p {
+section .radio_box p, section .hobby p {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 7px;
+}
+section .radio_box label {
+    margin-right: 80px;
 }
 section .hobby label {
     margin-right: 66px;
@@ -83,9 +85,6 @@ section .join {
     color: #fff;
     margin: 10px 0 20px 20px;
 }
-
-
-
 
 
 
