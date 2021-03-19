@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+header {
+    height: 120px;
+    background-color: #000;
+}
+header h1 {
+    width: 940px;
+    margin: 0 auto;
+    line-height: 120px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    height: 40px;
+    border-top: 1px solid #d1d1d1;
+    text-align: center;
+}
+footer address {
+    font-size: 12px;
+    color: #999;
+    margin: 30px 0 10px 0;
+}
+footer p {
+    font-size: 12px;
+    color: #000;
+}
