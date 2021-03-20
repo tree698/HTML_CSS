@@ -1,26 +1,77 @@
 @charset 'UTF-8';
 
+body {
+    font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
+}
+
 header {
     height: 120px;
     background-color: #000;
 }
 header h1 {
-    width: 940px;
+    width: 1000px;
     margin: 0 auto;
     line-height: 120px;
     font-size: 40px;
     color: #fff;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
+nav {
+    width: 1000px;
+    margin: 0 auto;
+}
+.nav_list {
+    overflow: hidden;
+    margin-top: 40px;
+}
+.nav_list li {
+    float: left;
+    width: 322px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+.nav_list li + li {
+    margin-left: 14px;
+}
+.nav_list li:hover {
+    border: 1px solid #454545;
+    font-weight: bold;
+}
+section {
+    width: 1000px;
+    margin: 0 auto;
+}
+section .title {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #454545;
+    margin-top: 60px;
+    padding-bottom: 15px;
+}
+section .wrap {
+    border: 1px solid #d1d1d1;
+    margin-top: 30px;
+}
+section .heading {
+    border-bottom: 1px solid #d1d1d1;
+    background: #f7f7f7;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 15px;
+}
+section .contents {
+    font-size: 12px;
+    color: #000;
+    padding: 30px;
+}
+section .list {
+    margin-bottom: 40px;
+}
 footer {
     height: 40px;
     border-top: 1px solid #d1d1d1;
