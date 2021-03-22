@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
-    <title>포트폴리오 웹페이지</title>
+    <title>포트폴리오 웹페이지-구성 요소 만들기</title>
 </head>
 <body>
     <header>
@@ -25,15 +25,90 @@
         <p class="title">구성요소</p>
         <div class="wrap table">
             <div class="heading">테이블 요소</div>
-            <p class="contents">콘텐츠 영역</p>
+            <table class="table_first">
+                <caption>아동 사이즈</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="colgroup" class="identify">구분</th>
+                        <th colspan="2" scope="colgroup" class="size">Small</th>
+                        <th colspan="2" scope="colgroup" class="size">Medium</th>
+                        <th colspan="2" scope="colgroup" class="size">Large</th>
+                        <th colspan="2" scope="col" class="test2">X-Large</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup">미국 남아<br>[Boys 2-7]</th>
+                        <th scope="row">사이즈</th>
+                        <td>2T</td>
+                        <td>3T</td>
+                        <td>4T</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td colspan="2">7</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">키</th>
+                        <td>84-91</td>
+                        <td>91-99</td>
+                        <td>91-99</td>
+                        <td>99-107</td>
+                        <td>107-114</td>
+                        <td>114-122</td>
+                        <td colspan="2">122-130</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">몸무게</th>
+                        <td>13-15</td>
+                        <td>14-15</td>
+                        <td>13-15</td>
+                        <td>14-15</td>
+                        <td>19-21</td>
+                        <td>20-23</td>
+                        <td colspan="2">23-25</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup">미국 여아<br>[Girls 2-6X]</th>
+                        <th scope="row">사이즈</th>
+                        <td>2T</td>
+                        <td>3T</td>
+                        <td>4T</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td colspan="2">6X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">키</th>
+                        <td>84-91</td>
+                        <td>91-99</td>
+                        <td>91-99</td>
+                        <td>99-107</td>
+                        <td>107-114</td>
+                        <td>114-122</td>
+                        <td colspan="2">122-130</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">몸무게</th>
+                        <td>13-15</td>
+                        <td>14-15</td>
+                        <td>13-15</td>
+                        <td>14-15</td>
+                        <td>19-21</td>
+                        <td>20-23</td>
+                        <td colspan="2">23-25</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="wrap form">
             <div class="heading">폼 요소</div>
-            <p class="contents">콘텐츠 영역</p>
+            
         </div>
         <div class="wrap list">
             <div class="heading">리스트 요소</div>
-            <p class="contents">콘텐츠 영역</p>
+            
         </div>
     </section>
     
