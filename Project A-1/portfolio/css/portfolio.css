@@ -3,8 +3,14 @@
 body {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 
 header {
+    width: 100%;
     height: 120px;
     background-color: #000;
 }
@@ -16,6 +22,8 @@ header h1 {
     color: #fff;
     font-weight: bold;
 }
+
+
 nav {
     width: 1000px;
     margin: 0 auto;
@@ -41,6 +49,8 @@ nav {
     border: 1px solid #454545;
     font-weight: bold;
 }
+
+
 section {
     width: 1000px;
     margin: 0 auto;
@@ -72,6 +82,8 @@ section .contents {
 section .list {
     margin-bottom: 40px;
 }
+
+
 footer {
     height: 40px;
     border-top: 1px solid #d1d1d1;
@@ -81,6 +93,10 @@ footer address {
     font-size: 12px;
     color: #999;
     margin: 30px 0 10px 0;
+}
+footer address a {
+    font-size: 12px;
+    color: #999;
 }
 footer p {
     font-size: 12px;
