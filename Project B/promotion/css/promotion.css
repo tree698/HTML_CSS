@@ -1,2 +1,40 @@
 @charset 'UTF-8';
 
+
+body {
+    font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
+}
+
+.header {
+    height: 66px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(64,64,64,0.75);
+    z-index: 10;
+}
+.header a {
+    display: block;
+    line-height: 66px;
+    margin-left: 200px;
+}
+
+.main .banner {
+    width: 100%;
+    height: 750px;
+    background-image: url("./image/section_invite.jpg");
+}
+
+
+
+
+.footer {
+    height: 80px;
+    font-size: 18px;
+    color: #70757d;
+    background-color: #e0e4eb;
+    line-height: 80px;
+    text-align: center;
+}
