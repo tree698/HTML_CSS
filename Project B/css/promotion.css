@@ -5,7 +5,7 @@ body {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
 }
 
-.header {
+.header_wrap {
     height: 66px;
     width: 100%;
     position: fixed;
@@ -15,22 +15,43 @@ body {
     background: rgba(64,64,64,0.75);
     z-index: 10;
 }
-.header a {
+.header_wrap a {
     display: block;
     line-height: 66px;
     margin-left: 200px;
 }
 
-.main .banner {
+.main_wrap .banner {
     width: 100%;
     height: 750px;
     background-image: url("./image/section_invite.jpg");
 }
 
+.main_wrap .creator {
+    width: 100%;
+    height: 822px;
+    background-image: url("./image/section_creator.jpg");
+}
+
+.main_wrap .store {
+    width: 100%;
+    height: 1084px;
+    background-image: url("./image/section_store.jpg");
+}
+
+.main_wrap .recipe {
+    width: 100%;
+    height: 1030px;
+    background-image: url("./image/pattern_recipe.jpg");
+}
+
+.main_wrap .faq {
+    width: 100%;
+    background-color: #fff;
+}
 
 
-
-.footer {
+.footer_wrap {
     height: 80px;
     font-size: 18px;
     color: #70757d;
