@@ -89,6 +89,7 @@ section .list {
 
 .footer_wrap {
     height: 40px;
+    width: 100%;
     border-top: 1px solid #d1d1d1;
     text-align: center;
 }
