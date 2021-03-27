@@ -46,7 +46,6 @@ table {
 }
 
 
-
 .header_wrap {
     height: 66px;
     width: 100%;
@@ -57,11 +56,33 @@ table {
     background: rgba(64,64,64,0.75);
     z-index: 10;
 }
-.header_wrap a {
-    display: block;
-    line-height: 66px;
-    margin-left: 200px;
+.logo_wrap {
+    width: 106px;
+    height: 22px;
+    margin: 22px 445px;
+    background: url("/Project B/image/logo.png") no-repeat 0 0;
 }
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+.header_wrap .link_logo {
+    display: block;
+    width: 106px;
+    height: 22px;
+}
+
+
+
+
+
+
+
+
 
 .main_wrap .banner {
     width: 100%;
