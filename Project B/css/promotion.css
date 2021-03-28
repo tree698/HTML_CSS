@@ -75,6 +75,94 @@ body {
     height: 1084px;
     background: #d5e43f url("/Project B/image/section_store.jpg") no-repeat center;
 }
+.sec_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.sec_list {
+    margin: 300px auto 180px;
+}
+.sec_list li {
+    float: left;
+    width: 230px;
+    margin: 0 20px 80px 0;
+}
+.sec_list li:nth-child(4n+4) {
+    margin-right: 0px;
+}
+.sec_list img {
+    border-radius: 10px;
+    display: block;
+}
+
+.sec_list .image_wrap {
+    position: relative;
+}
+.sec_list .thumb_img {
+    display: inline-block;
+}
+.sec_list .dimmed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(96,132,2,0.9);
+    border-radius: 10px;
+    display: none;
+}
+.sec_list .percent {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+}
+.sec_list .time {
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+.image_wrap:hover  .dimmed{
+    display: block;
+}
+.thumb_img:focus {
+    outline: 0;
+}
+.thumb_img:focus + .dimmed{
+    display: block;
+}
+.sec_list .name {
+    font-size: 20px;
+    color: #1b1d21;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sec_list .price {
+    font-size: 28px;
+    color: #1b1d21;
+    text-align: center;
+}
+.sec_list .won {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main_wrap .recipe {
     width: 100%;
