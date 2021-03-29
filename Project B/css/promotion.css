@@ -69,40 +69,39 @@ body {
 
 
 
-
 .main_wrap .store {
     width: 100%;
     height: 1084px;
     background: #d5e43f url("/Project B/image/section_store.jpg") no-repeat center;
 }
-.sec_wrap {
-    width: 1000px;
+.main_wrap .store .item_wrap {
+    width: 980px;
     margin: 0 auto;
     overflow: hidden;
 }
-.sec_list {
-    margin: 300px auto 180px;
+.main_wrap .store .item_list {
+    margin-top: 300px;
 }
-.sec_list li {
+.main_wrap .store li {
     float: left;
     width: 230px;
-    margin: 0 20px 80px 0;
+    height: 230px;
+    margin: 0 20px 140px 0;
 }
-.sec_list li:nth-child(4n+4) {
+.main_wrap .store li:nth-child(4n+4) {
     margin-right: 0px;
 }
-.sec_list img {
+.main_wrap .store .image_wrap {
+    position: relative;
+}
+.main_wrap .store .thumb_img {
+    display: block;
+}
+.main_wrap .store img {
     border-radius: 10px;
     display: block;
 }
-
-.sec_list .image_wrap {
-    position: relative;
-}
-.sec_list .thumb_img {
-    display: inline-block;
-}
-.sec_list .dimmed {
+.main_wrap .store .dimmed {
     position: absolute;
     top: 0;
     right: 0;
@@ -112,42 +111,46 @@ body {
     border-radius: 10px;
     display: none;
 }
-.sec_list .percent {
-    font-size: 70px;
+.main_wrap .store .percent {
+    font-size: 65px;
     color: #fff;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 64px;
 }
-.sec_list .time {
+.main_wrap .store .time {
+    font-size: 20px;
     color: #fff;
     display: block;
     text-align: center;
 }
-.image_wrap:hover  .dimmed{
+.main_wrap .store .image_wrap:hover  .dimmed{
     display: block;
 }
-.thumb_img:focus {
+.main_wrap .store .thumb_img:focus {
     outline: 0;
 }
-.thumb_img:focus + .dimmed{
+.main_wrap .store .thumb_img:focus + .dimmed{
     display: block;
 }
-.sec_list .name {
+.main_wrap .store .name {
     font-size: 20px;
     color: #1b1d21;
     text-align: center;
-    padding: 10px 10px 0 10px;
+    padding: 20px 10px 0 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.sec_list .price {
+.main_wrap .store .price {
     font-size: 28px;
     color: #1b1d21;
     text-align: center;
+    font-weight: bold;
 }
-.sec_list .won {
-    font-size: 18px;
+.main_wrap .store .won {
+    font-size: 20px;
+    color: #1b1d21;
+    font-weight: normal;
 }
 
 
