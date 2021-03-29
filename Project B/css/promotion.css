@@ -21,6 +21,9 @@ time, mark, audio, video {
 ol, ul {
 	list-style: none;
 }
+a {
+    text-decoration: none;
+}
 body {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
 }
@@ -54,7 +57,6 @@ body {
     width: 106px;
     height: 22px;
 }
-
 .main_wrap .banner {
     width: 100%;
     height: 750px;
@@ -65,10 +67,6 @@ body {
     height: 822px;
     background: #f9939d url("/Project B/image/section_creator.jpg") no-repeat center;
 }
-
-
-
-
 .main_wrap .store {
     width: 100%;
     height: 1084px;
@@ -110,6 +108,7 @@ body {
     background: rgba(96,132,2,0.9);
     border-radius: 10px;
     display: none;
+    cursor: pointer;
 }
 .main_wrap .store .percent {
     font-size: 65px;
@@ -156,22 +155,87 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .main_wrap .recipe {
     width: 100%;
     height: 1030px;
-    background: #b893f9 url("/Project B/image/pattern_recipe.png") repeat-x center;
+    background-image: url("/Project B/image/section_recipe.png"), url("/Project B/image/pattern_recipe.png");
+    background-repeat: no-repeat, repeat-x;
+    background-position: 50% 28%, center;
+    background-color: #b893f9;
+    position: relative;
 }
+.main_wrap .recipe .link_img1 {
+    width: 480px;
+    height: 482px;
+    display: block;
+    position: absolute;
+    top: 297px;
+    left: 462px;
+    background-color: red;
+    opacity: 0.6;
+}
+.main_wrap .recipe .link_img2 {
+    width: 480px;
+    height: 482px;
+    display: block;
+    position: absolute;
+    top: 297px;
+    left: 962px;
+    background-color: blue;
+    opacity: 0.6;
+} 
+
+
+
+
+.main_wrap .recipe .link {
+    width: 310px;
+    height: 91px;
+    display: block;
+    position: absolute;
+    top: 845px;
+    left: 797px;
+    z-index: 2;
+}
+.main_wrap .recipe .link_purple {
+    background-image: url("/Project B/image/go_recipe.gif");
+    width: 310px;
+    height: 91px;
+    position: absolute;
+    top: 845px;
+    left: 797px;
+    z-index: 1;
+}
+.main_wrap .recipe .link_yellow {
+    background-image: url("/Project B/image/go_recipe_over.gif");
+    width: 310px;
+    height: 91px;
+    position: absolute;
+    top: 845px;
+    left: 797px;
+    display: none;
+}
+.main_wrap .recipe .link_wrap:hover .link_purple {
+    display: none;
+}
+.main_wrap .recipe .link_wrap:hover .link_yellow {
+    display: block;
+}
+.main_wrap .recipe .link:focus {
+    outline: 0;
+}
+.main_wrap .recipe .link:focus + .link_purple {
+    display: none;
+}
+.main_wrap .recipe .link:focus + .link_yellow {
+    display: display;
+}
+
+
+
+
+
+
 
 .main_wrap .faq {
     width: 100%;
