@@ -290,23 +290,18 @@ body {
     right: 0;
     display: none;
 }
-
-
-
-
-
-.main_wrap .faq .answer_wrap_1 {
+.main_wrap .faq .answer_wrap {
     position: relative;
-    /* display: none; */
+    display: none;
 }
-.main_wrap .faq .answer_wrap_1 .answer {
+.main_wrap .faq .answer_wrap .answer {
     background-color: #f7f8fa;
     font-size: 16px;
     color: #60656e;
     line-height: 28px;
     padding: 23px 80px;
 }
-.main_wrap .faq .answer_wrap_1 .answer_icon {
+.main_wrap .faq .answer_wrap .answer_icon {
     width: 21px;
     height: 17px;
     background: url("/Project B/image/icon_answer.gif") no-repeat 0 0;
@@ -317,109 +312,43 @@ body {
 
 
 
-.main_wrap .faq .icon_down:hover + .icon_up {
+.main_wrap .faq .icon_first:hover + .icon_up {
     display: block;
 }
-.main_wrap .faq .icon_down:hover .answer_wrap_1 {
+.main_wrap .faq .icon_first:hover .answer_first {
     display: block;
 }
 
 
 
 
-
-
-
-.main_wrap .faq .answer_wrap_2 {
-    position: relative;
-    /* display: none; */
+.main_wrap .faq .icon_second:hover + .icon_up {
+    display: block;
 }
-.main_wrap .faq .answer_wrap_2 .answer {
-    background-color: #f7f8fa;
-    font-size: 16px;
-    color: #60656e;
-    line-height: 28px;
-    padding: 23px 80px;
+.main_wrap .faq .icon_second:hover .answer_second {
+    display: block;
 }
-.main_wrap .faq .answer_wrap_2 .answer_icon {
-    width: 21px;
-    height: 17px;
-    background: url("/Project B/image/icon_answer.gif") no-repeat 0 0;
-    position: absolute;
-    top: 28px;
-    left: 3%;
+.main_wrap .faq .icon_third:hover + .icon_up {
+    display: block;
 }
-
-
-
-
-.main_wrap .faq .answer_wrap_3 {
-    position: relative;
-    /* display: none; */
+.main_wrap .faq .icon_third:hover .answer_third {
+    display: block;
 }
-.main_wrap .faq .answer_wrap_3 .answer {
-    background-color: #f7f8fa;
-    font-size: 16px;
-    color: #60656e;
-    line-height: 28px;
-    padding: 23px 80px;
+.main_wrap .faq .icon_fourth:hover + .icon_up {
+    display: block;
 }
-.main_wrap .faq .answer_wrap_3 .answer_icon {
-    width: 21px;
-    height: 17px;
-    background: url("/Project B/image/icon_answer.gif") no-repeat 0 0;
-    position: absolute;
-    top: 28px;
-    left: 3%;
+.main_wrap .faq .icon_fourth:hover .answer_fourth {
+    display: block;
+}
+.main_wrap .faq .icon_fifth:hover + .icon_up {
+    display: block;
+}
+.main_wrap .faq .icon_fifth:hover .answer_fifth {
+    display: block;
 }
 
 
 
-
-
-.main_wrap .faq .answer_wrap_4 {
-    position: relative;
-    /* display: none; */
-}
-.main_wrap .faq .answer_wrap_4 .answer {
-    background-color: #f7f8fa;
-    font-size: 16px;
-    color: #60656e;
-    line-height: 28px;
-    padding: 23px 80px;
-}
-.main_wrap .faq .answer_wrap_4 .answer_icon {
-    width: 21px;
-    height: 17px;
-    background: url("/Project B/image/icon_answer.gif") no-repeat 0 0;
-    position: absolute;
-    top: 28px;
-    left: 3%;
-}
-
-
-
-
-
-.main_wrap .faq .answer_wrap_5 {
-    position: relative;
-    /* display: none; */
-}
-.main_wrap .faq .answer_wrap_5 .answer {
-    background-color: #f7f8fa;
-    font-size: 16px;
-    color: #60656e;
-    line-height: 28px;
-    padding: 23px 80px;
-}
-.main_wrap .faq .answer_wrap_5 .answer_icon {
-    width: 21px;
-    height: 17px;
-    background: url("/Project B/image/icon_answer.gif") no-repeat 0 0;
-    position: absolute;
-    top: 28px;
-    left: 3%;
-}
 
 
 
