@@ -242,29 +242,94 @@ body {
     height: 50px;
     background: url("/Project B/image/title_faq.gif") no-repeat;
     position: absolute;
-    top: 0px;
+    top: -76px;
     left: 48%;
 }
 .main_wrap .faq_contents {
     width: 1000px;
     margin: 170px auto 100px;
     border-bottom: 1px solid #a1a5ad;
+    position: relative;
 }
 .main_wrap .faq .question {
     border-top: 1px solid #a1a5ad;
     font-size: 20px;
+    font-weight: bold;
     color: #1b1d21;
     line-height: 28px;
-    padding: 0 80px;
+    padding: 23px 80px;
 }
 .main_wrap .faq .answer {
     background-color: #f7f8fa;
     font-size: 16px;
     color: #60656e;
     line-height: 28px;
-    padding: 0 80px;
+    padding: 23px 80px;
     /* display: none; */
 }
+.main_wrap .faq .question_icon {
+    width: 21px;
+    height: 20px;
+    background: url("/Project B/image/icon_question.gif") no-repeat;
+}
+.main_wrap .faq .question_first {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+.main_wrap .faq .question_second {
+    position: absolute;
+    top: 206px;
+    left: 30px;
+}
+.main_wrap .faq .question_third {
+    position: absolute;
+    top: 409px;
+    left: 30px;
+}
+.main_wrap .faq .question_fourth {
+    position: absolute;
+    top: 559px;
+    left: 30px;
+}
+.main_wrap .faq .question_fifth {
+    position: absolute;
+    top: 709px;
+    left: 30px;
+}
+.main_wrap .faq .answer_icon {
+    width: 21px;
+    height: 17px;
+    background: url("/Project B/image/icon_answer.gif") no-repeat;
+    position: absolute;
+} 
+.main_wrap .faq .answer_first {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}
+.main_wrap .faq .answer_second {
+    position: absolute;
+    top: 280px;
+    left: 30px;
+}
+.main_wrap .faq .answer_third {
+    position: absolute;
+    top: 485px;
+    left: 30px;
+}
+.main_wrap .faq .answer_fourth {
+    position: absolute;
+    top: 634px;
+    left: 30px;
+}
+.main_wrap .faq .answer_fifth {
+    position: absolute;
+    top: 784px;
+    left: 30px;
+}
+
+
 
 
 
