@@ -1,21 +1,30 @@
 @charset 'UTF-8';
 
+html, body, div,
+h1, p, a, ol, ul, li,
+article, footer, header,
+menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 body {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
+    min-width: 1080px;
 }
-
-a {
-    text-decoration: none;
-    color: #000;
+ul {
+	list-style: none;
 }
-
 
 .header_wrap {
     width: 100%;
     height: 120px;
     background-color: #000;
 }
-.header_wrap h1 {
+.header_wrap .heading {
     width: 1000px;
     margin: 0 auto;
     line-height: 120px;
@@ -23,8 +32,6 @@ a {
     color: #fff;
     font-weight: bold;
 }
-
-
 .nav_wrap {
     width: 1000px;
     margin: 0 auto;
@@ -35,13 +42,16 @@ a {
 }
 .nav_list li {
     float: left;
-    width: 322px;
+    width: calc((1000px - 14px*2 - 1px*6)/3);
     height: 33px;
     line-height: 33px;
     border: 1px solid #d1d1d1;
     font-size: 16px;
-    color: #000;
     text-align: center;
+}
+.nav_list li a {
+    text-decoration: none;
+    color:#000;
 }
 .nav_list li + li {
     margin-left: 14px;
@@ -50,14 +60,11 @@ a {
     border: 1px solid #454545;
     font-weight: bold;
 }
-
-
-
-section {
+.main {
     width: 1000px;
     margin: 0 auto;
 }
-section .title {
+.main .title {
     font-size: 20px;
     color: #000;
     font-weight: bold;
@@ -65,28 +72,28 @@ section .title {
     margin-top: 60px;
     padding-bottom: 15px;
 }
-section .wrap {
+.main .wrap {
     border: 1px solid #d1d1d1;
     margin-top: 30px;
 }
-section .heading {
+.main .heading {
     border-bottom: 1px solid #d1d1d1;
     background: #f7f7f7;
     height: 46px;
     line-height: 46px;
     padding-left: 15px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
 }
-section .contents {
+.main .contents {
     font-size: 12px;
     color: #000;
     padding: 30px;
 }
-section .list {
+.main .list {
     margin-bottom: 40px;
 }
-
-
-
 .footer_wrap {
     height: 40px;
     width: 100%;
@@ -98,11 +105,11 @@ section .list {
     color: #999;
     margin: 30px 0 10px 0;
 }
-.footer_wrap address a {
+.footer_wrap .address a {
     font-size: 12px;
     color: #999;
 }
-.footer_wrap p {
+.footer_wrap .info {
     font-size: 12px;
     color: #000;
 }
