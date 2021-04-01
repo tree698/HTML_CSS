@@ -40,6 +40,7 @@ body {
 }
 .logo_wrap {
     position: relative;
+    max-width: 800px;
 }
 .header_wrap .link_logo {
     /* display: block; */
@@ -165,6 +166,9 @@ body {
     background-color: #b893f9;
     position: relative;
 }
+
+
+
 .main_wrap .recipe .link_img1 {
     width: 480px;
     height: 482px;
@@ -198,18 +202,18 @@ body {
     background: url("/Project B/image/go_recipe.gif") no-repeat 0 0;
     width: 310px;
     height: 91px;
-    position: absolute;
-    top: 845px;
-    left: 797px;
+    /* position: absolute; */
+    /* top: 845px;
+    left: 797px; */
     z-index: 1;
 }
 .main_wrap .recipe .link_yellow {
     background: url("/Project B/image/go_recipe_over.gif") no-repeat 0 0;
     width: 310px;
     height: 91px;
-    position: absolute;
-    top: 845px;
-    left: 797px;
+    /* position: absolute; */
+    /* top: 845px;
+    left: 797px; */
     display: none;
 }
 .main_wrap .recipe .link_wrap:hover .link_purple {
@@ -218,14 +222,16 @@ body {
 .main_wrap .recipe .link_wrap:hover .link_yellow {
     display: block;
 }
+
+
 .main_wrap .recipe .link:focus {
     outline: 0;
 }
-.main_wrap .recipe .link:focus + .link_purple {
+.main_wrap .recipe .link:focus .link_purple {
     display: none;
 }
-.main_wrap .recipe .link:focus + .link_yellow {
-    display: display;
+.main_wrap .recipe .link:focus .link_yellow {
+    display: block;
 }
 
 
@@ -312,12 +318,13 @@ body {
 
 
 
-.main_wrap .faq .icon_first:hover + .icon_up {
+.main_wrap .faq .icon_first:hover+  .icon_up {
     display: block;
 }
-.main_wrap .faq .icon_first:hover .answer_first {
-    display: block;
+.main_wrap .faq .icon_first:hover ~ .answer_first {
+    display: block !important;
 }
+
 
 
 
@@ -346,15 +353,6 @@ body {
 .main_wrap .faq .icon_fifth:hover .answer_fifth {
     display: block;
 }
-
-
-
-
-
-
-
-
-
 
 
 
