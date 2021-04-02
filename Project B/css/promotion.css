@@ -28,6 +28,11 @@ body {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
 }
 
+
+
+
+
+
 .header_wrap {
     width: 100%;
     height: 66px;
@@ -40,7 +45,6 @@ body {
 }
 .logo_wrap {
     position: relative;
-    max-width: 800px;
 }
 .header_wrap .link_logo {
     /* display: block; */
@@ -49,8 +53,18 @@ body {
     background: url("/Project B/image/logo.png") no-repeat 0 0;
     position: absolute;
     top: 22px;
-    left: 445px;
+    left: 435px;
 }
+
+
+
+
+
+
+
+
+
+
 .blind {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -157,6 +171,14 @@ body {
     font-weight: normal;
 }
 
+
+
+
+
+
+
+
+
 .main_wrap .recipe {
     width: 100%;
     height: 1030px;
@@ -166,13 +188,10 @@ body {
     background-color: #b893f9;
     position: relative;
 }
-
-
-
 .main_wrap .recipe .link_img1 {
     width: 480px;
     height: 482px;
-    display: block;
+    /* display: block; */
     position: absolute;
     top: 297px;
     left: 462px;
@@ -182,13 +201,17 @@ body {
 .main_wrap .recipe .link_img2 {
     width: 480px;
     height: 482px;
-    display: block;
+    /* display: block; */
     position: absolute;
     top: 297px;
     left: 962px;
-    background-color: blue;
+    /* background-color: blue; */
     opacity: 0.6;
 } 
+
+
+
+
 .main_wrap .recipe .link {
     width: 310px;
     height: 91px;
@@ -225,6 +248,13 @@ body {
 .main_wrap .recipe .link:focus .link_yellow {
     display: block;
 }
+
+
+
+
+
+
+
 
 
 
