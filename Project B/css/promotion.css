@@ -26,9 +26,12 @@ a {
 }
 body {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
+    min-width: 1080px;
 }
+
+
 .header_wrap {
-    /* width: 100%; */
+    width: 100%;
     height: 66px;
     background: rgba(64,64,64,0.75);
     position: fixed;
@@ -37,7 +40,7 @@ body {
     left: 0; 
     z-index: 10;
 }
-.logo_wrap {
+.header_wrap .logo_wrap {
     width: 1080px;
     margin: 0 auto;
     padding: 22px 0 0 46px;
@@ -56,20 +59,35 @@ body {
 	margin: -1px;
 	overflow: hidden;
 }
+
+
 .main_wrap .banner {
-    /* width: 100%; */
+    background-color: #fff;
+    width: 100%;
+}
+.main_wrap .banner_inner {
+    background: url("/Project B/image/section_invite.jpg") no-repeat center;
     height: 750px;
-    background: #fff url("/Project B/image/section_invite.jpg") no-repeat center;
 }
+
+
 .main_wrap .creator {
+    background-color: #f9939d;
     width: 100%;
-    height: 822px;
-    background: #f9939d url("/Project B/image/section_creator.jpg") no-repeat center;
 }
+.main_wrap .creator_inner {
+    background: url("/Project B/image/section_creator.jpg") no-repeat center;
+    height: 822px;
+}
+
+
 .main_wrap .store {
+    background-color: #d5e43f;
     width: 100%;
+}
+.main_wrap .store_inner {
+    background: url("/Project B/image/section_store.jpg") no-repeat center;
     height: 1084px;
-    background: #d5e43f url("/Project B/image/section_store.jpg") no-repeat center;
 }
 .main_wrap .store .item_wrap {
     width: 980px;
@@ -150,15 +168,19 @@ body {
     color: #1b1d21;
     font-weight: normal;
 }
+
+
 .main_wrap .recipe {
+    background-color: #b893f9;
     width: 100%;
-    height: 1030px;
+}
+.main_wrap .recipe_inner {
     background-image: url("/Project B/image/section_recipe.png"), url("/Project B/image/pattern_recipe.png");
     background-repeat: no-repeat, repeat-x;
     background-position: 50% 28%, center;
-    background-color: #b893f9;
+    height: 1030px;
 }
-.main_wrap .img_wrap {
+.main_wrap .recipe .img_wrap {
     width: 1000px;
     margin: 0 auto;
     position: relative;
@@ -187,7 +209,7 @@ body {
     height: 91px;
     position: absolute;
     top: 845px;
-    left: 367px;
+    left: 365px;
     z-index: 2;
 }
 .main_wrap .recipe .link_purple {
@@ -217,22 +239,24 @@ body {
 .main_wrap .recipe .link:focus .link_yellow {
     display: block;
 }
+
+
 .main_wrap .faq {
-    width: 100%;
     background-color: #fff;
-    position: relative;
+    width: 100%;
+}
+.main_wrap .faq_inner {
+    padding: 100px 0;
 }
 .main_wrap .faq_img {
     width: 98px;
     height: 50px;
+    margin: 0 auto 30px;
     background: url("/Project B/image/title_faq.gif") no-repeat 0 0;
-    position: absolute;
-    top: -76px;
-    left: 48%;
 }
 .main_wrap .faq_contents {
     width: 1000px;
-    margin: 170px auto 100px;
+    margin: 0 auto;
     border-bottom: 1px solid #a1a5ad;
 }
 .main_wrap .faq .question_wrap {
@@ -324,6 +348,8 @@ body {
 .main_wrap .faq .icon_fifth:hover ~ .answer_fifth {
     display: block;
 }
+
+
 .footer_wrap {
     width: 100%;
     height: 80px;
