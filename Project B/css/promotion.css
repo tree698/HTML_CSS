@@ -30,7 +30,6 @@ body {
 }
 
 
-
 /* 헤더 */
 .header_wrap {
     width: 100%;
@@ -63,11 +62,6 @@ body {
 }
 
 
-
-
-
-
-
 /* 메인 배너 */
 .main_wrap .banner {
     background-color: #fff;
@@ -79,10 +73,6 @@ body {
 }
 
 
-
-
-
-
 /* 크리에이터 */
 .main_wrap .creator {
     background-color: #f9939d;
@@ -92,9 +82,6 @@ body {
     background: url("/Project B/image/section_creator.jpg") no-repeat center;
     height: 822px;
 }
-
-
-
 
 
 /* 스토어 */
@@ -187,12 +174,6 @@ body {
 }
 
 
-
-
-
-
-
-
 /* 레시피 */
 .main_wrap .recipe {
     background-color: #b893f9;
@@ -263,12 +244,6 @@ body {
 .main_wrap .recipe .link:focus .link_yellow {
     display: block;
 }
-
-
-
-
-
-
 
 
 /* FAQ */
@@ -379,11 +354,6 @@ body {
 .main_wrap .faq .icon_fifth:hover ~ .answer_fifth {
     display: block;
 }
-
-
-
-
-
 
 
 /* Footer & TOP */
