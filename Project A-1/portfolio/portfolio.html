@@ -14,23 +14,30 @@
 
     <nav class="nav_wrap">
         <ul class="nav_list">
-            <li><a href="#table">테이블 요소</a> </li>
-            <li><a href="#form">폼 요소</a></li>
-            <li><a href="#list">리스트 요소</a></li>
+            <li class="list_item"><a href="#table" class="item_linker">테이블 요소</a> </li>
+            <li class="list_item"><a href="#form" class="item_linker">폼 요소</a></li>
+            <li class="list_item"><a href="#list" class="item_linker">리스트 요소</a></li>
         </ul>
     </nav>
 
-    <main class="main">
+    <main class="main_wrap">
         <p class="title">구성요소</p>
-        <article class="wrap table">
+
+        <!-- 클래스 분기는 UI가 바뀔때 사용-->
+        <!-- <article class="wrap table"> -->
+        <article class="wrap">
             <h2 class="heading">테이블 요소</h2>
             <p class="contents" id="table">콘텐츠 영역</p>
         </article>
-        <article class="wrap form">
+
+        <!-- <article class="wrap form"> -->
+        <article class="wrap">
             <h2 class="heading">폼 요소</h2>
             <p class="contents" id="form">콘텐츠 영역</p>
         </article>
-        <article class="wrap list">
+
+        <!-- <article class="wrap list"> -->
+        <article class="wrap">
             <h2 class="heading">리스트 요소</h2>
             <p class="contents" id="list">콘텐츠 영역</p>
         </article>
