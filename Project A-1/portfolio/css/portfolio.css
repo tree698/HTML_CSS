@@ -54,11 +54,12 @@ ul {
 .nav_list .item_linker {
     text-decoration: none;
     color:#000;
+    display: block;
 }
 .nav_list .list_item + .list_item {
     margin-left: 14px;
 }
-.nav_list .item_linker:hover {
+.nav_list .list_item:hover {
     /* border: 1px solid #454545; */
     border-color: #454545;
     font-weight: bold;
