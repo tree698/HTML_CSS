@@ -28,7 +28,6 @@ a {
 }
 body {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
-    /* min-width: 1080px; */
 }
 
 .blind {
@@ -40,20 +39,108 @@ body {
 	overflow: hidden;
 }
 
+@media  screen and (max-width: 320px), screen and (max-height: 320px) and (orientation: landscape) {
+	.header_wrap {
+		min-width: 320px;
+		height: 50px;		
+		background-color: #fff;
+		overflow: hidden;
+		position: relative;
+	}
+	.header_wrap .logo_linker {
+		width: 114px;
+		height: 50px;
+		display: block;
+		float: left;
+		position: relative;
+	}
+	.header_wrap .logo {
+		width: 107px;
+		height: 22px;
+		background: url("/Project C/foodwith/image/logo_m.png") no-repeat center;
+		position: absolute;
+		left: 7px;
+		top: 14px;
+	}
+	.header_wrap .menu_linker {
+		width: 46px;
+		height: 50px;
+		display: block;
+		float: right;
+		position: relative;
+	}
+	.header_wrap .menu {
+		width: 32px;
+		height: 32px;
+		background: url("/Project C/foodwith/image/icon_menu.png") no-repeat center;
+		position: absolute;
+		top: 9px;
+		right: 7px;
+	}	
+	.header_wrap .menu_wrap {
+		height: 128px;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		/* display: none; */
+	}
+	.header_wrap .menu_item {
+		margin: 10px 0;
+	}
+	.header_wrap .menu_wrap .item {
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		display: block;
+		border: 1px solid blue;
+	}
+	.header_wrap .menu_linker:active + .menu_wrap{
+		display: block;
+	}
 
-.header_wrap {
-	background-color:red;
+
+
+
+	.main_wrap {
+		min-width: 320px;
+	}
+	.main_banner {
+		background-color: #ffee02;
+	}
+	.main_banner img {
+		width: 250px;
+		height: 180px;
+		margin: 20px 35px 5px;
+	}
+	.main_banner .title {
+		margin: 0 35px;
+		font-size: 22px;
+		color: #333;
+		line-height: 28px;
+		max-height: 56px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-line-clamp: 2;
+	}
+	.main_banner .line {
+		border: solid 1px #000;
+		width: 10%;
+		margin: 15px auto 20px;
+	}
+	.main_banner .name {
+		font-size: 16px;
+		color: #333;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	.main_list {
+		background-color: #f0f0f0;
+	}
+	.main_list .list_item {
+		margin: 15px;
+	}
+
 }
-.header_wrap .logo {
-	background: url("/Project C/foodwith/image/logo_m.png");
-}
 
-
-
-@media  screen and (max-width: 320px;), screen and (max-height: 320px) and (orientation: landscape) {
-	
-}
-
-@media  screen and (max-width: 768px;), screen and (max-height: 768px) and (orientation: landscape) {
-	
-}
