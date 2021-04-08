@@ -45,12 +45,11 @@ body {
 		height: 50px;		
 		background-color: #fff;
 		overflow: hidden;
-		position: relative;
 	}
 	.header_wrap .logo_linker {
 		width: 114px;
 		height: 50px;
-		display: block;
+		/* display: block; */
 		float: left;
 		position: relative;
 	}
@@ -65,7 +64,7 @@ body {
 	.header_wrap .menu_linker {
 		width: 46px;
 		height: 50px;
-		display: block;
+		/* display: block; */
 		float: right;
 		position: relative;
 	}
@@ -77,24 +76,32 @@ body {
 		top: 9px;
 		right: 7px;
 	}	
-	.header_wrap .menu_wrap {
+
+
+
+	.nav_wrap {
+		width: 320px;
 		height: 128px;
+		background-color: #fff;
 		position: absolute;
 		top: 50px;
 		left: 0;
-		/* display: none; */
+		z-index: 100;
+		display: none;
 	}
-	.header_wrap .menu_item {
+	.nav_item {
 		margin: 10px 0;
 	}
-	.header_wrap .menu_wrap .item {
+	.nav_wrap .item {
 		height: 36px;
 		line-height: 36px;
+		color: #333;
 		text-align: center;
 		display: block;
-		border: 1px solid blue;
 	}
-	.header_wrap .menu_linker:active + .menu_wrap{
+
+
+	.menu_linker:active + .nav_wrap{
 		display: block;
 	}
 
@@ -108,7 +115,7 @@ body {
 
 
 
-	
+
 
 	.main_wrap {
 		min-width: 320px;
@@ -181,5 +188,25 @@ body {
 		text-align: center;
 		line-height: 33px;
 	}
+	.main_form {
+		background-color: #f4f5f7;
+	}
+	.main_form .message_1 {
+		font-size: 22px;
+		color: #333;
+		text-align: center;
+	}
+	.main_form .message_2 {
+		font-size: 14px;
+		color: #333;
+		text-align: center;
+		margin: 8px 0 20px;
+	}
+	.main_form .form_wrap {
+		width: 290px;
+		margin: 0 auto;
+		background-color: #fff;
+	}
+
 }
 
