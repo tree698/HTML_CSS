@@ -101,6 +101,15 @@ body {
 
 
 
+
+
+
+
+
+
+
+	
+
 	.main_wrap {
 		min-width: 320px;
 	}
@@ -137,10 +146,40 @@ body {
 	}
 	.main_list {
 		background-color: #f0f0f0;
+		height: 2095px;
 	}
 	.main_list .list_item {
 		margin: 15px;
 	}
-
+	.main_list .img_linker {
+		display: block;
+	}
+	.main_list img {
+		width: 290px;
+		height: 290px;
+	}
+	.main_list .description {
+		font-size: 14px;
+		color: #333;
+		text-align: center;
+		padding: 5px 5px 10px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.main_list .more_item_linker {
+		width: 290px;
+		height: 33px;
+		margin: 0 auto;
+		background-color: #fff;
+		border: 1px solid #333;
+		display: block;
+	}
+	.main_list .more_item {
+		font-size: 16px;
+		color: #333;
+		text-align: center;
+		line-height: 33px;
+	}
 }
 
