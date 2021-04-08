@@ -31,4 +31,29 @@ body {
     /* min-width: 1080px; */
 }
 
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
 
+
+.header_wrap {
+	background-color:red;
+}
+.header_wrap .logo {
+	background: url("/Project C/foodwith/image/logo_m.png");
+}
+
+
+
+@media  screen and (max-width: 320px;), screen and (max-height: 320px) and (orientation: landscape) {
+	
+}
+
+@media  screen and (max-width: 768px;), screen and (max-height: 768px) and (orientation: landscape) {
+	
+}
