@@ -4,7 +4,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -38,6 +38,7 @@ body, table, form, section {
 	margin: -1px;
 	overflow: hidden;
 }
+
 
 @media  screen and (max-width: 320px), screen and (max-height: 320px) and (orientation: landscape) {
 	.header_wrap {
@@ -129,7 +130,7 @@ body, table, form, section {
 	.main_banner .line {
 		border: solid 1px #000;
 		width: 10%;
-		margin: 19px auto 20px;
+		margin: 20px auto;
 	}
 	.main_banner .name_wrap {
 		position: relative;
@@ -158,7 +159,7 @@ body, table, form, section {
 
 	.main_list {
 		background-color: #f0f0f0;
-		height: 2095px;
+		/* min-height: 2095px; */
 	}
 	.main_list .list_item {
 		margin: 15px;
@@ -200,8 +201,8 @@ body, table, form, section {
 
 
 	.main_form {
-		/* background-color: #f4f5f7; */
-		background-color: lightblue;
+		background-color: #f4f5f7;
+		/* background-color: lightblue; */
 	}
 	.main_form .message_1 {
 		font-size: 22px;
@@ -219,9 +220,11 @@ body, table, form, section {
 		width: 290px;
 		margin: 0 auto;
 		background-color: #fff;
+		box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
 	}
 	.main_form .form_contents {
 		padding: 25px;
+		position: relative;
 	}
 	.main_form .label {
 		font-size: 16px;
@@ -350,7 +353,116 @@ body, table, form, section {
 		font-size: 14px;
 		color: #acacac;
 	}
+	.main_form .button {
+		border: 2px solid #bdbdbd;
+		background-color: #e9e9e9;
+		font-size: 11px;
+		color: #666;
+		position: absolute;
+		top: 25px;
+		right: 25px;
+	}
 
+
+
+	.main_notice {
+		background-color: #f0f0f0;
+	}
+	.main_notice .notice {
+		padding: 15px 15px 15px;
+		overflow: hidden;
+	}
+	.main_notice .title {
+		font-size: 16px;
+		color: #333;
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+	.main_notice .notice_linker {
+		width: 230px;
+		font-size: 14px;
+		color: #333;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		float: left;
+	}
+	.main_notice .notice_more_linker {
+		font-size: 14px;
+		color: #333;
+		float: right;
+	}
+	.main_notice .border {
+		border: 1px solid #c1c1c1;
+		width: 290px;
+		margin: 0 auto;
+	}
+	.main_notice .creators {
+		padding: 15px 15px 0;
+		overflow: hidden;
+	}
+	.main_notice .creators_linker_1 {
+		font-size: 14px;
+		color: #333;
+		padding-right: 15px;
+		float: left;
+	}
+	.main_notice .creators_linker_2 {
+		font-size: 14px;
+		color: #333;
+		padding: 0 15px;
+		border-left: 1px solid #c1c1c1;
+		float: left;
+	}
+
+
+
+
+	
+	.main_notice .partners {
+		padding: 15px 15px;
+		overflow: hidden;
+	}
+	.main_notice .partners_linker_1 {
+		font-size: 14px;
+		color: #333;
+		padding-right: 15px;
+		float: left;
+	}
+	.main_notice .partners_linker_2 {
+		font-size: 14px;
+		color: #333;
+		padding: 0 15px;
+		border-left: 1px solid #c1c1c1;
+		float: left;
+	}
+
+
+
+	.footer_wrap {
+		background-color: #fff;
+	}
+	.footer_wrap .info_wrap {
+		width: 320px;
+		overflow: hidden;
+		margin: 15px auto;
+	}
+	.footer_wrap .info_item {
+		float: left;
+	}
+	.footer_wrap .info_item + .info_item {
+		padding-left: 10px;
+	}
+	.footer_wrap .info_linker {
+		font-size: 14px;
+		color: #333;
+	}
+	.footer_wrap .copyright {
+		font-size: 14px;
+		color: #333;
+		text-align: center;
+		margin-bottom: 15px;
+	}
 
 
 }
