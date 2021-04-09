@@ -30,6 +30,28 @@ body, table, form, section {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
 }
 
+
+
+.header_wrap {
+	min-width: 320px;
+	height: 50px;		
+	background-color: #fff;
+	overflow: hidden;
+}
+.header_wrap .logo_linker {
+	width: 114px;
+	height: 50px;
+	float: left;
+	position: relative;
+}
+.header_wrap .logo {
+	width: 107px;
+	height: 22px;
+	background: url("/Project C/foodwith/image/logo_m.png") no-repeat center;
+	position: absolute;
+	left: 7px;
+	top: 14px;
+}
 .blind {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -38,432 +60,466 @@ body, table, form, section {
 	margin: -1px;
 	overflow: hidden;
 }
+.header_wrap .menu_linker {
+	width: 46px;
+	height: 50px;
+	float: right;
+	position: relative;
+}
+.header_wrap .menu {
+	width: 32px;
+	height: 32px;
+	background: url("/Project C/foodwith/image/icon_menu.png") no-repeat center;
+	position: absolute;
+	top: 9px;
+	right: 7px;
+}	
+.header_wrap .nav_wrap {
+	width: 320px;
+	height: 128px;
+	background-color: #fff;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	display: none;
+}
+.header_wrap .nav_item {
+	margin: 10px 0;
+}
+.header_wrap .nav_wrap .item {
+	height: 36px;
+	line-height: 36px;
+	color: #333;
+	text-align: center;
+	display: block;
+}
+.header_wrap .menu_linker:active + .nav_wrap{
+	display: block;
+}
 
 
-@media  screen and (max-width: 320px), screen and (max-height: 320px) and (orientation: landscape) {
-	.header_wrap {
-		min-width: 320px;
-		height: 50px;		
-		background-color: #fff;
-		overflow: hidden;
-	}
-	.header_wrap .logo_linker {
-		width: 114px;
-		height: 50px;
-		float: left;
-		position: relative;
-	}
-	.header_wrap .logo {
-		width: 107px;
-		height: 22px;
-		background: url("/Project C/foodwith/image/logo_m.png") no-repeat center;
-		position: absolute;
-		left: 7px;
-		top: 14px;
-	}
+.main_wrap {
+	min-width: 320px;
+}
+
+
+.main_banner {
+	background-color: #ffee02;
+}
+.main_banner .img_wrap {
+	text-align: center;
+}
+.main_banner img {
+	width: 250px;
+	height: 180px;
+	display: inline-block;
+}
+.main_banner .title {
+	margin: 0 35px;
+	font-size: 23px;
+	color: #333;
+	text-align: center;
+	line-height: 28px;
+	max-height: 56px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp: 2;
+}
+.main_banner .line {
+	border: solid 1px #000;
+	width: 42px;
+	margin: 20px auto;
+}
+
+
+
+.main_banner .name_wrap {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.main_banner .thumbnail {
+	background: url("/Project C/foodwith/image/thumbnail_profile_none.jpg") no-repeat center;
+	width: 40px;
+	height: 40px;
+	border-radius: 70%;
+	display: inline-block;
+}
+.main_banner .name {
+	font-size: 16px;
+	color: #333;
+	display: inline-block;
+}
+
+
+
+
+
+
+.main_list {
+	/* background-color: #f0f0f0; */
+	background-color: blue;
+}
+.main_list .list_wrap {
+	padding: 15px 15px;
+}
+.main_list .img_linker {
+	display: block;
+}
+.main_list img {
+	width: 290px;
+	height: 290px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main_list .description {
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	padding: 5px 5px 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.main_list .more_item_linker {
+	width: 290px;
+	height: 33px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #333;
+	display: block;
+}
+.main_list .more_item {
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	line-height: 33px;
+}
+
+
+.main_form {
+	/* background-color: #f4f5f7; */
+	background-color: pink;
+}
+.main_form .message_1 {
+	font-size: 22px;
+	color: #333;
+	text-align: center;
+	padding-top: 25px;
+}
+.main_form .message_2 {
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	margin: 8px 0 20px;
+}
+.main_form .form_wrap {
+	width: 290px;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+}
+.main_form .form_contents {
+	padding: 25px;
+	position: relative;
+}
+.main_form .label {
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+}
+.main_form .nickname_input {
+	width: 240px;
+	padding: 8px 0;
+	border-bottom: 1px solid #c1c1c1;
+	margin-bottom: 20px;
+}
+.main_form .nickname_input input {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	border: 0 none;
+	font-size: 14px;
+	color: #333;
+}
+.main_form .nickname_input input[type=text]::placeholder {
+	font-size: 14px;
+	color: #acacac;
+	opacity: 1;
+}
+.main_form .nickname_input input[type=text]:-ms-placeholder {
+	font-size: 14px;
+	color: #acacac;
+}
+.main_form .nickname_input input[type=text]::-ms-placeholder {
+	font-size: 14px;
+	color: #acacac;
+}
+.main_form .email_wrap {
+	overflow: hidden;
+}
+.main_form .email_input {
+	width: 114px;
+	padding: 8px 0;
+	border-bottom: 1px solid #c1c1c1;
+	float: left;
+}
+.main_form .email_input input {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	border: 0 none;
+	font-size: 14px;
+	color: #333;
+}
+.main_form .email_input input[type=text]::placeholder {
+	font-size: 14px;
+	color: #acacac;
+	opacity: 1;
+}
+.main_form .email_input input[type=text]:-ms-placeholder {
+	font-size: 14px;
+	color: #acacac;
+}
+.main_form .email_input input[type=text]::-ms-placeholder {
+	font-size: 14px;
+	color: #acacac;
+}
+.main_form .at_mark {
+	font-size: 14px;
+	color: #333;
+	line-height: 36px;
+	float: left;
+}
+.main_form .email_select {
+	display: block;
+	position: relative;
+	width: 114px;
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 1px solid #c1c1c1;
+	text-align: left;
+	float: right;
+}
+.main_form .email_select select {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: 0 none;		
+	font-size: 14px;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+.main_form .email_select::after {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	background:url("/Project C/foodwith/image/icon_arrow_email.png") no-repeat 0 0;
+	width: 20px;
+	height: 12px;
+	display: block;
+	content:'';
+}
+.main_form .textarea {
+	width: 224px;
+	height: 110px;
+	padding: 8px;
+	border: 1px solid #c1c1c1;
+	margin-top: 20px;
+}
+.main_form .textarea textarea {
+	width: 100%;
+	height: 100%;
+	border: 0 none;
+	padding: 0;
+	font-size: 14px;
+	color: #333;
+	resize: none;
+}
+.main_form .textarea textarea::placeholder {
+	font-size: 14px;
+	color: #acacac;
+	opacity: 1;
+}
+.main_form .textarea textarea:-ms-placeholder {
+	font-size: 14px;
+	color: #acacac;
+}
+.main_form .textarea textarea::-ms-placeholder {
+	font-size: 14px;
+	color: #acacac;
+}
+.main_form .button {
+	border: 2px solid #bdbdbd;
+	background-color: #e9e9e9;
+	font-size: 11px;
+	color: #666;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+
+
+.main_notice {
+	background-color: #f0f0f0;
+}
+.main_notice .notice {
+	padding: 15px 15px 15px;
+	overflow: hidden;
+}
+.main_notice .title {
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+.main_notice .notice_linker {
+	width: 230px;
+	font-size: 14px;
+	color: #333;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: left;
+}
+.main_notice .notice_more_linker {
+	font-size: 14px;
+	color: #333;
+	float: right;
+}
+.main_notice .border {
+	border: 1px solid #c1c1c1;
+	width: 290px;
+	margin: 0 auto;
+}
+.main_notice .creators {
+	padding: 15px 15px 0;
+	overflow: hidden;
+}
+.main_notice .creators_linker_1 {
+	font-size: 14px;
+	color: #333;
+	padding-right: 15px;
+	float: left;
+}
+.main_notice .creators_linker_2 {
+	font-size: 14px;
+	color: #333;
+	padding: 0 15px;
+	border-left: 1px solid #c1c1c1;
+	float: left;
+}
+
+
+.main_notice .partners {
+	padding: 15px 15px;
+	overflow: hidden;
+}
+.main_notice .partners_linker_1 {
+	font-size: 14px;
+	color: #333;
+	padding-right: 15px;
+	float: left;
+}
+.main_notice .partners_linker_2 {
+	font-size: 14px;
+	color: #333;
+	padding: 0 15px;
+	border-left: 1px solid #c1c1c1;
+	float: left;
+}
+
+
+.footer_wrap {
+	background-color: #fff;
+}
+.footer_wrap .info_wrap {
+	margin: 15px 0;
+	text-align: center;
+}
+.footer_wrap .info_item {
+	display: inline-block;
+}
+.footer_wrap .info_item + .info_item {
+	padding-left: 10px;
+}
+.footer_wrap .info_linker {
+	font-size: 14px;
+	color: #333;
+}
+.footer_wrap .copyright {
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+
+
+
+@media  screen and (min-width: 768px), screen and (min-height: 768px) and (orientation: landscape) {
+
+
 	.header_wrap .menu_linker {
-		width: 46px;
-		height: 50px;
-		float: right;
-		position: relative;
-	}
-	.header_wrap .menu {
-		width: 32px;
-		height: 32px;
-		background: url("/Project C/foodwith/image/icon_menu.png") no-repeat center;
-		position: absolute;
-		top: 9px;
-		right: 7px;
-	}	
-	.header_wrap .nav_wrap {
-		width: 320px;
-		height: 128px;
-		background-color: #fff;
-		position: absolute;
-		top: 50px;
-		left: 0;
-		z-index: 100;
 		display: none;
 	}
-	.header_wrap .nav_item {
-		margin: 10px 0;
+	.header_wrap .menu {
+		display: none;
+	}	
+	.header_wrap .nav_wrap {
+		display: block;
+		width: 230px;
+		height: 50px;
+		top: 0;
+		right: 0;
 	}
 	.header_wrap .nav_wrap .item {
-		height: 36px;
-		line-height: 36px;
+		float: left;
+		font-size: 18px;
 		color: #333;
-		text-align: center;
-		display: block;
+		margin: 0 10px;
 	}
-	.header_wrap .menu_linker:active + .nav_wrap{
-		display: block;
-	}
-
-
-
-	.main_wrap {
-		min-width: 320px;
-	}
-
-
-
 	.main_banner {
-		background-color: #ffee02;
+		height: 330px;
+		position: relative;
 	}
 	.main_banner img {
-		width: 250px;
-		height: 180px;
-		margin: 20px 35px 5px;
+		width: 350px;
+		height: 252px;
+		margin: 0 0;
+		position: absolute;
+		top: 50%;
+		margin-top: -126px;
+		right: 34px;
 	}
 	.main_banner .title {
-		margin: 0 35px;
-		font-size: 22px;
+		margin: 50px 0 ;
+		font-size: 32px;
 		color: #333;
-		line-height: 28px;
-		max-height: 56px;
+		line-height: 40px;
+		max-height: 120px;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: -webkit-box;
-		-webkit-box-orient:vertical;
-		-webkit-line-clamp: 2;
-	}
-	.main_banner .line {
-		border: solid 1px #000;
-		width: 10%;
-		margin: 20px auto;
-	}
-	.main_banner .name_wrap {
-		position: relative;
-		height: 45px;
-		padding-bottom: 30px;
-	}
-	.main_banner .name {
-		font-size: 16px;
-		color: #333;
-		text-align: center;
-		padding: 15px 0 0 51px;
-	}
-	.main_banner .name::before {
-		position: absolute;
-		top: 0;
-		left: 89px;
-		content: '';
-		width: 45px;
-		height: 45px;
-		border-radius: 70%;
-		background: url("/Project C/foodwith/image/thumbnail_profile_none.jpg") no-repeat center;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+
 	}
 
 
 
 
-	.main_list {
-		background-color: #f0f0f0;
-		/* min-height: 2095px; */
-	}
-	.main_list .list_item {
-		margin: 15px;
-	}
-	.main_list .img_linker {
-		display: block;
-	}
-	.main_list img {
-		width: 290px;
-		height: 290px;
-		border: 1px solid rgba(0, 0, 0, 0.1);
-	}
-	.main_list .description {
-		font-size: 14px;
-		color: #333;
-		text-align: center;
-		padding: 5px 5px 10px;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-	.main_list .more_item_linker {
-		width: 290px;
-		height: 33px;
-		margin: 0 auto;
-		background-color: #fff;
-		border: 1px solid #333;
-		display: block;
-	}
-	.main_list .more_item {
-		font-size: 16px;
-		color: #333;
-		text-align: center;
-		line-height: 33px;
-	}
-
-
-
-
-
-	.main_form {
-		background-color: #f4f5f7;
-		/* background-color: lightblue; */
-	}
-	.main_form .message_1 {
-		font-size: 22px;
-		color: #333;
-		text-align: center;
-		padding-top: 25px;
-	}
-	.main_form .message_2 {
-		font-size: 14px;
-		color: #333;
-		text-align: center;
-		margin: 8px 0 20px;
-	}
-	.main_form .form_wrap {
-		width: 290px;
-		margin: 0 auto;
-		background-color: #fff;
-		box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-	}
-	.main_form .form_contents {
-		padding: 25px;
-		position: relative;
-	}
-	.main_form .label {
-		font-size: 16px;
-		color: #333;
-		font-weight: bold;
-	}
-	.main_form .nickname_input {
-		width: 240px;
-		padding: 8px 0;
-		border-bottom: 1px solid #c1c1c1;
-		margin-bottom: 20px;
-	}
-	.main_form .nickname_input input {
-		width: 100%;
-		height: 20px;
-		line-height: 20px;
-		border: 0 none;
-		font-size: 14px;
-		color: #333;
-	}
-	.main_form .nickname_input input[type=text]::placeholder {
-		font-size: 14px;
-		color: #acacac;
-		opacity: 1;
-	}
-	.main_form .nickname_input input[type=text]:-ms-placeholder {
-		font-size: 14px;
-		color: #acacac;
-	}
-	.main_form .nickname_input input[type=text]::-ms-placeholder {
-		font-size: 14px;
-		color: #acacac;
-	}
-	.main_form .email_wrap {
-		overflow: hidden;
-	}
-	.main_form .email_input {
-		width: 114px;
-		padding: 8px 0;
-		border-bottom: 1px solid #c1c1c1;
-		float: left;
-	}
-	.main_form .email_input input {
-		width: 100%;
-		height: 20px;
-		line-height: 20px;
-		border: 0 none;
-		font-size: 14px;
-		color: #333;
-	}
-	.main_form .email_input input[type=text]::placeholder {
-		font-size: 14px;
-		color: #acacac;
-		opacity: 1;
-	}
-	.main_form .email_input input[type=text]:-ms-placeholder {
-		font-size: 14px;
-		color: #acacac;
-	}
-	.main_form .email_input input[type=text]::-ms-placeholder {
-		font-size: 14px;
-		color: #acacac;
-	}
-	.main_form .at_mark {
-		font-size: 14px;
-		color: #333;
-		line-height: 36px;
-		float: left;
-	}
-	.main_form .email_select {
-		display: block;
-		position: relative;
-		width: 114px;
-		height: 36px;
-		line-height: 36px;
-		border-bottom: 1px solid #c1c1c1;
-		text-align: left;
-		float: right;
-	}
-	.main_form .email_select select {
-		width: 100%;
-		height: 100%;
-		background-color: transparent;
-		border: 0 none;		
-		font-size: 14px;
-		appearance: none;
-		-moz-appearance: none;
-		-webkit-appearance: none;
-	}
-	.main_form .email_select::after {
-		position: absolute;
-		top: 10px;
-		right: 0px;
-		background:url("/Project C/foodwith/image/icon_arrow_email.png") no-repeat 0 0;
-		width: 20px;
-		height: 12px;
-		display: block;
-		content:'';
-	}
-	.main_form .textarea {
-		width: 224px;
-		height: 110px;
-		padding: 8px;
-		border: 1px solid #c1c1c1;
-		margin-top: 20px;
-	}
-	.main_form .textarea textarea {
-		width: 100%;
-		height: 100%;
-		border: 0 none;
-		padding: 0;
-		font-size: 14px;
-		color: #333;
-		resize: none;
-	}
-	.main_form .textarea textarea::placeholder {
-		font-size: 14px;
-		color: #acacac;
-		opacity: 1;
-	}
-	.main_form .textarea textarea:-ms-placeholder {
-		font-size: 14px;
-		color: #acacac;
-	}
-	.main_form .textarea textarea::-ms-placeholder {
-		font-size: 14px;
-		color: #acacac;
-	}
-	.main_form .button {
-		border: 2px solid #bdbdbd;
-		background-color: #e9e9e9;
-		font-size: 11px;
-		color: #666;
-		position: absolute;
-		top: 25px;
-		right: 25px;
-	}
-
-
-
-	.main_notice {
-		background-color: #f0f0f0;
-	}
-	.main_notice .notice {
-		padding: 15px 15px 15px;
-		overflow: hidden;
-	}
-	.main_notice .title {
-		font-size: 16px;
-		color: #333;
-		font-weight: bold;
-		margin-bottom: 8px;
-	}
-	.main_notice .notice_linker {
-		width: 230px;
-		font-size: 14px;
-		color: #333;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		float: left;
-	}
-	.main_notice .notice_more_linker {
-		font-size: 14px;
-		color: #333;
-		float: right;
-	}
-	.main_notice .border {
-		border: 1px solid #c1c1c1;
-		width: 290px;
-		margin: 0 auto;
-	}
-	.main_notice .creators {
-		padding: 15px 15px 0;
-		overflow: hidden;
-	}
-	.main_notice .creators_linker_1 {
-		font-size: 14px;
-		color: #333;
-		padding-right: 15px;
-		float: left;
-	}
-	.main_notice .creators_linker_2 {
-		font-size: 14px;
-		color: #333;
-		padding: 0 15px;
-		border-left: 1px solid #c1c1c1;
-		float: left;
-	}
-
-
-
-
-	
-	.main_notice .partners {
-		padding: 15px 15px;
-		overflow: hidden;
-	}
-	.main_notice .partners_linker_1 {
-		font-size: 14px;
-		color: #333;
-		padding-right: 15px;
-		float: left;
-	}
-	.main_notice .partners_linker_2 {
-		font-size: 14px;
-		color: #333;
-		padding: 0 15px;
-		border-left: 1px solid #c1c1c1;
-		float: left;
-	}
-
-
-
-	.footer_wrap {
-		background-color: #fff;
-	}
-	.footer_wrap .info_wrap {
-		width: 320px;
-		overflow: hidden;
-		margin: 15px auto;
-	}
-	.footer_wrap .info_item {
-		float: left;
-	}
-	.footer_wrap .info_item + .info_item {
-		padding-left: 10px;
-	}
-	.footer_wrap .info_linker {
-		font-size: 14px;
-		color: #333;
-	}
-	.footer_wrap .copyright {
-		font-size: 14px;
-		color: #333;
-		text-align: center;
-		margin-bottom: 15px;
-	}
 
 
 }
+
+
+
+@media  screen and (min-width: 1024px), screen and (min-height: 1024px) and (orientation: landscape) {
+	
+}
+
+
+
 
