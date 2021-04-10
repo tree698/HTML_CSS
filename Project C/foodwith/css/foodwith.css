@@ -26,7 +26,7 @@ ol, ul {
 a {
     text-decoration: none;
 }
-body, table, form, section {
+body, table, form, section, textarea, select {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
 }
 
@@ -103,11 +103,15 @@ body, table, form, section {
 }
 
 
+
+
+
 .main_banner {
 	background-color: #ffee02;
 }
 .main_banner .img_wrap {
 	text-align: center;
+	padding-top: 20px;
 }
 .main_banner img {
 	width: 250px;
@@ -135,9 +139,13 @@ body, table, form, section {
 
 
 
+
+
+
+
 .main_banner .name_wrap {
 	text-align: center;
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 .main_banner .thumbnail {
 	background: url("/Project C/foodwith/image/thumbnail_profile_none.jpg") no-repeat center;
@@ -151,6 +159,10 @@ body, table, form, section {
 	color: #333;
 	display: inline-block;
 }
+
+
+
+
 
 
 
@@ -189,12 +201,25 @@ body, table, form, section {
 	border: 1px solid #333;
 	display: block;
 }
+
+
+
+
+
+
 .main_list .more_item {
 	font-size: 16px;
 	color: #333;
 	text-align: center;
 	line-height: 33px;
+	/* padding-bottom: 20px; */
 }
+
+
+
+
+
+
 
 
 .main_form {
