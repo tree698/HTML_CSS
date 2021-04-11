@@ -1,5 +1,13 @@
 @charset 'UTF-8';
 
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,18 +55,10 @@ body, table, form, section, textarea, select {
 .header_wrap .logo {
 	width: 107px;
 	height: 22px;
-	background: url("/Project C/foodwith/image/logo_m.png") no-repeat center;
+	background: url("/HTML_CSS/Project C/foodwith/image/logo_m.png") no-repeat center;
 	position: absolute;
 	left: 7px;
 	top: 14px;
-}
-.blind {
-	position: absolute;
-	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
 }
 .header_wrap .menu_linker {
 	width: 46px;
@@ -69,7 +69,7 @@ body, table, form, section, textarea, select {
 .header_wrap .menu {
 	width: 32px;
 	height: 32px;
-	background: url("/Project C/foodwith/image/icon_menu.png") no-repeat center;
+	background: url("/HTML_CSS/Project C/foodwith/image/icon_menu.png") no-repeat center;
 	position: absolute;
 	top: 9px;
 	right: 7px;
@@ -98,20 +98,19 @@ body, table, form, section, textarea, select {
 }
 
 
+
 .main_wrap {
 	min-width: 320px;
 }
 
 
 
-
-
 .main_banner {
 	background-color: #ffee02;
+	padding: 20px 0;
 }
 .main_banner .img_wrap {
 	text-align: center;
-	padding-top: 20px;
 }
 .main_banner img {
 	width: 250px;
@@ -136,45 +135,34 @@ body, table, form, section, textarea, select {
 	width: 42px;
 	margin: 20px auto;
 }
-
-
-
-
-
-
-
 .main_banner .name_wrap {
 	text-align: center;
-	margin-bottom: 30px;
+	height: 40px;
+	line-height: 40px;
 }
 .main_banner .thumbnail {
-	background: url("/Project C/foodwith/image/thumbnail_profile_none.jpg") no-repeat center;
+	background: url("/HTML_CSS/Project C/foodwith/image/thumbnail_profile_none.jpg") no-repeat center;
 	width: 40px;
 	height: 40px;
 	border-radius: 70%;
 	display: inline-block;
+	vertical-align: middle;
 }
 .main_banner .name {
 	font-size: 16px;
 	color: #333;
 	display: inline-block;
+	vertical-align: middle;
 }
-
-
-
-
-
-
-
 
 
 
 .main_list {
-	/* background-color: #f0f0f0; */
-	background-color: blue;
+	background-color: #f0f0f0;
+	padding: 20px 15px;
 }
-.main_list .list_wrap {
-	padding: 15px 15px;
+.main_list .list_item {
+	margin-bottom: 15px;
 }
 .main_list .img_linker {
 	display: block;
@@ -201,36 +189,24 @@ body, table, form, section, textarea, select {
 	border: 1px solid #333;
 	display: block;
 }
-
-
-
-
-
-
 .main_list .more_item {
 	font-size: 16px;
 	color: #333;
 	text-align: center;
 	line-height: 33px;
-	/* padding-bottom: 20px; */
 }
-
-
-
-
-
 
 
 
 .main_form {
 	/* background-color: #f4f5f7; */
 	background-color: pink;
+	padding: 20px 15px;
 }
 .main_form .message_1 {
 	font-size: 22px;
 	color: #333;
 	text-align: center;
-	padding-top: 25px;
 }
 .main_form .message_2 {
 	font-size: 14px;
@@ -340,7 +316,7 @@ body, table, form, section, textarea, select {
 	position: absolute;
 	top: 10px;
 	right: 0px;
-	background:url("/Project C/foodwith/image/icon_arrow_email.png") no-repeat 0 0;
+	background:url("/HTML_CSS/Project C/foodwith/image/icon_arrow_email.png") no-repeat 0 0;
 	width: 20px;
 	height: 12px;
 	display: block;
@@ -384,6 +360,7 @@ body, table, form, section, textarea, select {
 	top: 25px;
 	right: 25px;
 }
+
 
 
 .main_notice {
@@ -435,8 +412,6 @@ body, table, form, section, textarea, select {
 	border-left: 1px solid #c1c1c1;
 	float: left;
 }
-
-
 .main_notice .partners {
 	padding: 15px 15px;
 	overflow: hidden;
@@ -456,12 +431,14 @@ body, table, form, section, textarea, select {
 }
 
 
+
 .footer_wrap {
 	background-color: #fff;
+	padding: 20px 15px;
 }
 .footer_wrap .info_wrap {
-	margin: 15px 0;
 	text-align: center;
+	margin-bottom: 10px;
 }
 .footer_wrap .info_item {
 	display: inline-block;
@@ -505,23 +482,27 @@ body, table, form, section, textarea, select {
 		color: #333;
 		margin: 0 10px;
 	}
+
+
+
 	.main_banner {
 		height: 330px;
-		position: relative;
+		padding: 34px;
+		overflow: hidden;
+	}
+	.main_banner .img_wrap {
+		float: right;
+		margin-top: 37px;
 	}
 	.main_banner img {
 		width: 350px;
 		height: 252px;
-		margin: 0 0;
-		position: absolute;
-		top: 50%;
-		margin-top: -126px;
-		right: 34px;
 	}
 	.main_banner .title {
-		margin: 50px 0 ;
+		margin: 66px 0 0;
 		font-size: 32px;
 		color: #333;
+		text-align: left;
 		line-height: 40px;
 		max-height: 120px;
 		overflow: hidden;
@@ -529,11 +510,16 @@ body, table, form, section, textarea, select {
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 3;
-
 	}
-
-
-
+	.main_banner .line {
+		margin: 35px 0;
+	}
+	.main_banner .name_wrap {
+		display: inline-block;
+	}
+	.main_banner .name {
+		font-size: 18px;
+	}
 
 
 
@@ -543,6 +529,26 @@ body, table, form, section, textarea, select {
 
 @media  screen and (min-width: 1024px), screen and (min-height: 1024px) and (orientation: landscape) {
 	
+	.t {
+		background-color: #ffee02;
+	}
+	.main_banner {
+		max-width: 1024px;
+		padding: 0;
+		margin: 0 auto;
+		
+	}
+	.main_banner .img_wrap {
+		margin-top: 16px;
+	}
+	.main_banner img {
+		width: 400px;
+		height: 300px;
+	}
+	.main_banner .title {
+		width: 460px;
+		font-size: 40px;
+	}
 }
 
 
