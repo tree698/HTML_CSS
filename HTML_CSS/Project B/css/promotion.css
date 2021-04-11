@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,6 +24,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 }
 ol, ul {
@@ -24,21 +34,19 @@ ol, ul {
 a {
     text-decoration: none;
 }
-body {
+body  {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
     min-width: 1080px;
 }
 
 
-/* 헤더 */
 .header_wrap {
-    width: 100%;
     height: 66px;
     background: rgba(64,64,64,0.75);
     position: fixed;
     top: 0;
     right: 0;
-    left: 0; 
+    left: 0;
     z-index: 10;
 }
 .header_wrap .logo_wrap {
@@ -50,47 +58,27 @@ body {
     display: block;
     width: 106px;
     height: 22px;
-    background: url("/Project B/image/logo.png") no-repeat 0 0;
+    background: url("/HTML_CSS/Project B/image/logo.png") no-repeat 0 0;
 }
-.blind {
-	position: absolute;
-	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-}
-
-
-/* 메인 배너 */
 .main_wrap .banner {
     background-color: #fff;
-    width: 100%;
 }
 .main_wrap .banner_inner {
-    background: url("/Project B/image/section_invite.jpg") no-repeat center;
+    background: url("/HTML_CSS/Project B/image/section_invite.jpg") no-repeat center;
     height: 750px;
 }
-
-
-/* 크리에이터 */
 .main_wrap .creator {
     background-color: #f9939d;
-    width: 100%;
 }
 .main_wrap .creator_inner {
-    background: url("/Project B/image/section_creator.jpg") no-repeat center;
+    background: url("/HTML_CSS/Project B/image/section_creator.jpg") no-repeat center;
     height: 822px;
 }
-
-
-/* 스토어 */
 .main_wrap .store {
     background-color: #d5e43f;
-    width: 100%;
 }
 .main_wrap .store_inner {
-    background: url("/Project B/image/section_store.jpg") no-repeat center;
+    background: url("/HTML_CSS/Project B/image/section_store.jpg") no-repeat center;
     height: 1084px;
 }
 .main_wrap .store .item_wrap {
@@ -101,24 +89,20 @@ body {
 .main_wrap .store .item_list {
     margin-top: 300px;
 }
-.main_wrap .store li {
+.main_wrap .store .item {
     float: left;
     width: 230px;
     height: 230px;
     margin: 0 20px 140px 0;
 }
-.main_wrap .store li:nth-child(4n+4) {
+.main_wrap .store .item:nth-child(4n+4) {
     margin-right: 0px;
 }
 .main_wrap .store .image_wrap {
     position: relative;
 }
-.main_wrap .store .thumb_img {
-    display: block;
-}
 .main_wrap .store img {
     border-radius: 10px;
-    display: block;
 }
 .main_wrap .store .dimmed {
     position: absolute;
@@ -129,7 +113,6 @@ body {
     background: rgba(96,132,2,0.9);
     border-radius: 10px;
     display: none;
-    cursor: pointer;
 }
 .main_wrap .store .percent {
     font-size: 65px;
@@ -143,13 +126,13 @@ body {
     display: block;
     text-align: center;
 }
-.main_wrap .store .image_wrap:hover .dimmed{
+.main_wrap .store .thumb_img:hover .dimmed{
     display: block;
 }
 .main_wrap .store .thumb_img:focus {
     outline: 0;
 }
-.main_wrap .store .thumb_img:focus + .dimmed{
+.main_wrap .store .thumb_img:focus .dimmed{
     display: block;
 }
 .main_wrap .store .name {
@@ -172,15 +155,11 @@ body {
     color: #1b1d21;
     font-weight: normal;
 }
-
-
-/* 레시피 */
 .main_wrap .recipe {
     background-color: #b893f9;
-    width: 100%;
 }
 .main_wrap .recipe_inner {
-    background-image: url("/Project B/image/section_recipe.png"), url("/Project B/image/pattern_recipe.png");
+    background-image: url("/HTML_CSS/Project B/image/section_recipe.png"), url("/Web_Development/HTML_CSS/Project B/image/pattern_recipe.png");
     background-repeat: no-repeat, repeat-x;
     background-position: 50% 28%, center;
     height: 1030px;
@@ -190,20 +169,18 @@ body {
     margin: 0 auto;
     position: relative;
 }
-.main_wrap .recipe .link_img1 {
+.main_wrap .recipe .link_img {
     width: 480px;
     height: 482px;
-    position: absolute;
-    top: 297px;
-    left: 11px;
+		position: absolute;
+		top: 297px;
 }
-.main_wrap .recipe .link_img2 {
-    width: 480px;
-    height: 482px;
-    position: absolute;
-    top: 297px;
-    right: 11px;
-} 
+.main_wrap .recipe .one {
+	left: 11px;
+}
+.main_wrap .recipe .two {
+	right: 11px;
+}
 .main_wrap .link_wrap {
     width: 1000px;
     margin: 0 auto;
@@ -217,39 +194,26 @@ body {
     left: 365px;
     z-index: 2;
 }
-.main_wrap .recipe .link_purple {
-    background: url("/Project B/image/go_recipe.gif") no-repeat 0 0;
-    width: 310px;
-    height: 91px;
-    z-index: 1;
+.main_wrap .recipe .linker {
+	background: url("/HTML_CSS/Project B/image/go_recipe.gif") no-repeat 0 0;
+	width: 310px;
+	height: 91px;
 }
-.main_wrap .recipe .link_yellow {
-    background: url("/Project B/image/go_recipe_over.gif") no-repeat 0 0;
-    width: 310px;
-    height: 91px;
-    display: none;
-}
-.main_wrap .recipe .link_wrap:hover .link_purple {
-    display: none;
-}
-.main_wrap .recipe .link_wrap:hover .link_yellow {
-    display: block;
+.main_wrap .recipe .link_wrap:hover .linker {
+	background: url("/HTML_CSS/Project B/image/go_recipe_over.gif") no-repeat 0 0;
+	width: 310px;
+	height: 91px;
 }
 .main_wrap .recipe .link:focus {
     outline: 0;
 }
-.main_wrap .recipe .link:focus .link_purple {
-    display: none;
+.main_wrap .recipe .link:focus .linker {
+	background: url("/HTML_CSS/Project B/image/go_recipe_over.gif") no-repeat 0 0;
+    width: 310px;
+    height: 91px;
 }
-.main_wrap .recipe .link:focus .link_yellow {
-    display: block;
-}
-
-
-/* FAQ */
 .main_wrap .faq {
     background-color: #fff;
-    width: 100%;
 }
 .main_wrap .faq_inner {
     padding: 100px 0;
@@ -258,7 +222,7 @@ body {
     width: 98px;
     height: 50px;
     margin: 0 auto 30px;
-    background: url("/Project B/image/title_faq.gif") no-repeat 0 0;
+    background: url("/HTML_CSS/Project B/image/title_faq.gif") no-repeat 0 0;
 }
 .main_wrap .faq_contents {
     width: 1000px;
@@ -279,7 +243,7 @@ body {
 .main_wrap .faq .question_wrap .question_icon {
     width: 21px;
     height: 20px;
-    background: url("/Project B/image/icon_question.gif") no-repeat 0 0;
+    background: url("/HTML_CSS/Project B/image/icon_question.gif") no-repeat 0 0;
     position: absolute;
     top: 28px;
     left: 3%;
@@ -288,7 +252,7 @@ body {
     border: none;
     width: 80px;
     height: 100%;
-    background: url("/Project B/image/icon_arrow_down.gif") no-repeat;
+    background: url("/HTML_CSS/Project B/image/icon_arrow_down.gif") no-repeat;
     background-position: center 30px;
     position: absolute;
     top: 0;
@@ -298,7 +262,7 @@ body {
     border: none;
     width: 80px;
     height: 100%;
-    background: url("/Project B/image/icon_arrow_up.gif") no-repeat;
+    background: url("/HTML_CSS/Project B/image/icon_arrow_up.gif") no-repeat;
     background-position: center 30px;
     position: absolute;
     top: 0;
@@ -319,7 +283,7 @@ body {
 .main_wrap .faq .answer_wrap .answer_icon {
     width: 21px;
     height: 17px;
-    background: url("/Project B/image/icon_answer.gif") no-repeat 0 0;
+    background: url("/HTML_CSS/Project B/image/icon_answer.gif") no-repeat 0 0;
     position: absolute;
     top: 28px;
     left: 3%;
@@ -354,11 +318,7 @@ body {
 .main_wrap .faq .icon_fifth:hover ~ .answer_fifth {
     display: block;
 }
-
-
-/* Footer & TOP */
 .footer_wrap {
-    width: 100%;
     height: 80px;
     font-size: 18px;
     color: #70757d;
@@ -369,7 +329,7 @@ body {
 .footer_wrap .link_top {
     width: 100px;
     height: 100px;
-    background: url("/Project B/image/go_top.gif") no-repeat 0 0;
+    background: url("/HTML_CSS/Project B/image/go_top.gif") no-repeat 0 0;
     position: fixed;
     right: 0;
     bottom: 180px;
