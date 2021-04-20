@@ -29,13 +29,14 @@ a {
 body {
     font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
     min-width: 1080px;
+    background-color: #6dc3a6;
 }
 
 
 .header_wrap {
     width: 96%;
     height: 80px;
-    background-color: #e0e0e0;
+    background-color: #fff;
     margin: 10px auto;
     position: relative;
 }
@@ -69,7 +70,7 @@ body {
 .footer_wrap {
     width: 96%;
     height: 60px;
-    background-color: #e0e0e0;
+    background-color: #fff;
     margin: 10px auto;
     display: table;
 }
