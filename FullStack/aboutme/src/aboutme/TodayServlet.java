@@ -31,6 +31,8 @@ public class TodayServlet extends HttpServlet {
 		out.print("<head><title>몇시에요</title></head>");
 		out.print("<body>");
 		
+		out.print("<a href=\"index.html\"><h4>메인 화면</h4></a>");
+		
 		LocalDateTime current = LocalDateTime.now();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:ss");
 		String formatted = current.format(formatter);
