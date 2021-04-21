@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: '나눔고딕', 'NanumGothic', '돋움', Dotum, sans-serif;
+    min-width: 1080px;
+    background-color: #6dc3a6;
+}
+
+
+.header_wrap {
+    width: 96%;
+    height: 80px;
+    background-color: #fff;
+    margin: 10px auto;
+    position: relative;
+}
+.header_wrap .menu_wrap {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.head_wrap .list_item {
+    overflow: hidden;
+}
+.header_wrap .item {
+    width: 150px;
+    height: 50px;
+    background-color: #90a4ae;
+    font-size: 20px;
+    color: #212121;
+    float: right;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px #bdbdbd;
+}
+.header_wrap .item:hover {
+    background-color: darkblue;
+    color: #fff;
+}
+
+
+.footer_wrap {
+    width: 96%;
+    height: 60px;
+    background-color: #fff;
+    margin: 10px auto;
+    display: table;
+}
+.footer_wrap .info_wrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.footer_wrap .info {
+    color: #212121;
+}
+.footer_wrap .email {
+    margin-bottom: 3px;
+}
+
+
