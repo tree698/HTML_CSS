@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "HTML_CSS"
+    "liveServer.settings.multiRootWorkspaceName": "HTML_CSS",
+    "editor.formatOnSave": true
 }
