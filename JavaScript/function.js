@@ -2,7 +2,7 @@
 
 // Function
 // fundamental building block in the program
-// subprogram ca be used multiple times
+// subprogram can be used multiple times
 // performs a task or calculates a vlue
 
 // 1. Function declaration
