@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/ApplicationScope03")
-public class ApplicationScope03 extends HttpServlet {
+@WebServlet("/ApplicationScope04")
+public class ApplicationScope04 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
- 
-    public ApplicationScope03() {
+
+    public ApplicationScope04() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,10 +27,14 @@ public class ApplicationScope03 extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		ServletContext study = getServletContext();
-		int value2 = 123;
-		study.setAttribute("value2", value2); 
-		
-		out.println("<h1>value2: " + value2 + "</h1>");	
+		try {
+			int value2 = (int) study.getAttribute("value2");
+			value2 -= 5;
+			study.setAttribute("value2", value2);
+			out.println("<h1>value2: " + value2 + "</h1>");
+		}catch(NullPointerException ex) {
+			out.println("<h2>value 값이 설정되지 않았습니다.</h2>");
+		}
 	}
 
 }
