@@ -10,7 +10,7 @@
 
 <%
 	try {
-		int value = (int) application.getAttribute("value");
+		int value = (int)application.getAttribute("value");
 		value += 2;
 %>
 

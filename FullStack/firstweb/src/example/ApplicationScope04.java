@@ -26,11 +26,11 @@ public class ApplicationScope04 extends HttpServlet {
 		response.setContentType("text/HTML; charset=utf-8");
 		PrintWriter out = response.getWriter();
 		
-		ServletContext study = getServletContext();
+		ServletContext application = getServletContext();
 		try {
-			int value2 = (int) study.getAttribute("value2");
+			int value2 = (int) application.getAttribute("value2");
 			value2 -= 5;
-			study.setAttribute("value2", value2);
+			application.setAttribute("value2", value2);
 			out.println("<h1>value2: " + value2 + "</h1>");
 		}catch(NullPointerException ex) {
 			out.println("<h2>value 값이 설정되지 않았습니다.</h2>");

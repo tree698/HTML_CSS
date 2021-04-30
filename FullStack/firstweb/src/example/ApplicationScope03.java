@@ -26,9 +26,9 @@ public class ApplicationScope03 extends HttpServlet {
 		response.setContentType("text/HTML; charset=utf-8");
 		PrintWriter out = response.getWriter();
 		
-		ServletContext study = getServletContext();
+		ServletContext application = getServletContext();
 		int value2 = 123;
-		study.setAttribute("value2", value2); 
+		application.setAttribute("value2", value2); 
 		
 		out.println("<h1>value2: " + value2 + "</h1>");	
 	}
