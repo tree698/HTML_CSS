@@ -23,7 +23,7 @@ public class ApplicationScope01 extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/HTML; utf-8");
+		response.setContentType("text/HTML; charset=utf-8");
 		PrintWriter out = response.getWriter();
 		
 		ServletContext application = getServletContext();

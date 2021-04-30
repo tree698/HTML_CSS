@@ -22,7 +22,7 @@ public class ApplicationScope02 extends HttpServlet {
     }
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/HTML, utf-8");
+		response.setContentType("text/HTML; charset=utf-8");
 		PrintWriter out = response.getWriter();
 		
 		ServletContext application = getServletContext();
@@ -30,7 +30,7 @@ public class ApplicationScope02 extends HttpServlet {
 		try {
 		int value = (int) application.getAttribute("value");
 		value ++;
-		
+		application.setAttribute("value", value);
 		out.println("<h1>value: " + value + "</h1>");
 		}catch(NullPointerException ex) {
 			out.println("value 값이 설정되지 않았습니다.");
