@@ -23,10 +23,24 @@
         document.querySelector('body').style.backgroundColor = 'black';
         document.querySelector('body').style.color = 'white';
         document.querySelector('#night_day').value = 'day';
+
+        let alist = document.querySelectorAll('a');
+        let i = 0;
+        while(i < alist.length){
+            alist[i].style.color = 'powderblue';
+            i++;
+        }
     } else {
         document.querySelector('body').style.backgroundColor = 'white';
         document.querySelector('body').style.color = 'black';
         document.querySelector('#night_day').value = 'night';
+
+        let alist = document.querySelectorAll('a');
+        let i = 0;
+        while(i < alist.length) {
+            alist[i].style.color = 'blue';
+            i ++;
+        }
     }
     ">
 
