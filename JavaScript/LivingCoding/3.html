@@ -5,6 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB1-JavaScript</title>
+    <script>
+        function nightdayhandler(self) {
+            let target = document.querySelector('body')
+            if(self.value === 'night') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            self.value = 'day';
+            let alist = document.querySelectorAll('a');
+            let i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'powderblue';
+                i++;
+            }
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            self.value = 'night';
+            let alist = document.querySelectorAll('a');
+            let i = 0;
+            while(i < alist.length) {
+                alist[i].style.color = 'blue';
+                i ++;
+        }
+        }
+        }
+    </script>
 </head>
 <body>
     <h1> <a href="index.html">WEB</a></h1>
@@ -44,6 +70,12 @@
     }
     ">
 
+
+
+    <input type="button" value='night' onclick="nightdayhandler(this);">
+
+
+    
     <ol>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS</a></li>
