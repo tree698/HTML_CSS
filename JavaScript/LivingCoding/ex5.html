@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let coworkers = {
+            "programmer":"egoing",
+            "designer":"leezche",
+        };
+
+        document.write("Programmer: " + coworkers.programmer + "<br>");
+        document.write("designer: " + coworkers.designer + "<br>");
+
+        coworkers.bookeeper = "duru";
+        document.write("bookeeper: " + coworkers.bookeeper + "<br>");
+
+        coworkers.data_scientist = "taeho";
+        document.write("data scientist: " + coworkers.data_scientist + "<br>");
+    </script>
+
+    <script>
+        for(let key in coworkers) {
+            document.write(key + "<br>");
+            document.write(coworkers[key] + "<br>")
+        }
+    </script>
+
+</body>
+</html>
