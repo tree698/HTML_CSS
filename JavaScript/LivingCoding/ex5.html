@@ -32,5 +32,15 @@
         }
     </script>
 
+    <script>
+        coworkers.showAll = function() {
+            for(let key in this) {
+                document.write(key + " : " + this[key] + "<br>");
+            }
+        }
+
+        coworkers.showAll()
+    </script>
+
 </body>
 </html>
