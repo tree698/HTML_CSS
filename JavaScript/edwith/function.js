@@ -70,3 +70,19 @@ function foo(){
 var foo2 = function(){
 
 }
+
+
+function a() {
+    console.log(arguments);
+    for(var i=0; i<arguments.length; i++){
+        console.log(arguments[i]);
+    }
+}
+a(1,2,3);
+
+
+function getName(name) {
+    return "Kim" + name;
+}
+// arrow 함수로 표현
+var getName = (name) => "Kim" + name; 
