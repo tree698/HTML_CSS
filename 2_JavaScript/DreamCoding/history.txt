@@ -1,0 +1,54 @@
+JavaScript 탄생 배경
+
+동적 웹사이트를 만들기 위해
+ - Scripting 언어를 추가 시도 
+ - Java를 추가하였으나 너무 무거워 호응이 별로~
+ - Brendan Eich는 Mocha를 개발 (간단, 유연)
+ - LiveScript intepreter
+ - Netescape는 LiveScript를 JavaScript로 변경 
+ - 1995년 Netescape의 네비게이터는 JavaScript와 엔진을 포함하여 출시 
+
+ - Microsoft는 JavaScript를 reverse engineering (소스코드 분석)하여 JScript를 출시
+ - Microsoft는 익스플로러에 JScript를 탑재하여 출시 
+ - 개발자는 어려움에 처함 (모든 브라우저에 작동해야 하기에)
+
+ - Netescape의 제안으로 통합 버전인 ECMAScript 1 탄생 
+ - 인터넷 익스플로러 점유율 95%로 상승하며 ECMAScript 표준안에 참여 안하고 독자 노선 
+ - 그래서 표준화가 더디게 진행됨
+
+ - 2004년 mozilla에서 Firefox 출시 
+ - mozilla는 ActionScript3와 Tamarin 엔진을 가지고 ECMA에게 표준화 검토 제안 
+ - 표준화 신경전 : Netescape / Microsoft / mozilla
+
+- 2004년 Jesse James Garrett는 AJAX (Asynchronous JavaScript and XML) 개발 
+- 비동기적으로 서버에서 데이터를 받고 처리할수 있는 기술 
+
+- 웹시장 커지면서 강력한 커뮤니티 탄생 
+- jQuery, dojo, mootoos를 통해 API 제공함으로써 다양한 웹브라우저에 작동 
+
+- 2008년 구글 Chrome 브라우저는 JIT (Just-in-time compilation)을 포함하여 JavaScript 실행 속도 향상
+- 구글에 자극을 받아 2008년 경쟁사들은 모여 통합을 논의
+- 2009년 ECMAScript 5 탄생 
+- 2015년 ECMAScript 6 탄생 --> class, arrowfunction
+- 이후 매년 수정본이 나오지만 (2019년 ECMAScript 10), ECMAScript 5 & 6에서 대부분 정의됨
+
+
+- 각 브라우저는 ECMAScript를 준용하는 다양한 엔진이 있음
+- Chrome (V8), Firefox (SpiderMonkey), Safari (JSCore), MS Edge (Chakra), Opera (Charakan), Adobe Flash (Tamarin)
+- Chrome (V8)는 nodeJS, ELECTRON에서도 사용 
+
+
+- 개발자들은 최신 버전의 ECMAScript가 탑재된 (TypeScript)을 사용하여 만들고 배포할때 ECMAScript 5 & 6에 맞추는
+  JavaScript transcompiler (BABEL)를 사용 
+- SPA (Single Page Application) : 한 페이지에서 데이터를 받아 와서 필요한 부분만 부분적으로 업데이트하는 것이 최근 유행
+- JavaScript만으로도 SPA 구현이 가능하지만, SPA를 좀더 쉽게 구현하고자...React, NGULAR, Backborn, View가 만들어 짐
+
+
+- ECMAScript 표준화 + V8 (JavaScript 엔진) 덕분에 node.JS (backend에서 서비스 구현) 등장 
+- 웹에서 동작할 수 있는 언어는 JavaScript이지만, 최근 WB가 등장 
+- WA (Web Assembly)는 다양한 언어(C#, C++, python 등)를 이용해 웹 어플리케이션을 만드는 것이 가능해 짐  
+
+(공부 내용)
+- JavaScript
+- WebAPIs
+
