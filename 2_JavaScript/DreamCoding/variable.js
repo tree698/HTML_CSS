@@ -14,9 +14,9 @@ let a;
 a = 6;
 
 // 2. Variable
-// let (added in ES6)
+// let (added in ES6)   ES6에서 추가됨 
 
-let globalName = 'globalName';
+let globalName = 'global Name';
 {
     let name = 'ellie';
     console.log(name);
@@ -27,13 +27,16 @@ let globalName = 'globalName';
 console.log(name);
 console.log(globalName);
 
+
 // var (don't ever use this)
 // var hoisting (move, declaration from bottom to top)
-// has no block scope 
+// has no block scope   블럭 사용이 안된다 
 console.log(age);
 age = 4
 console.log(age);
 var age;
+
+
 
 // 3. Constant
 // favor immutable data type always for a few reasons
@@ -41,10 +44,15 @@ var age;
 const daysInWeek = 7;
 const maxNumber = 5;
 
+// 자바스크립트에서 변수는
+// mutable type의 let  vs. immutable type의 const
+
+
+
 // 4. Variable types
 // primitive, single item: number, string, boolean, null, undefined, symbol
 // object, box container
-// function, first-class function
+// function, first-class function(함수도 변수로 할당 가능하고 함수로 return도 가능)
 const count = 17;  
 const size = 17.1;
 console.log(count);
@@ -63,7 +71,7 @@ console.log(infinity);
 console.log(negativeInfinity);
 console.log(nAn);
 
-// bigInt (fairly new, dont use it yet)  over (-2*53) ~ 2*53
+// bigInt (fairly new, dont use it yet)  over (-2**53) ~ 2**53
 const bigInt = 1234567890123456789012345678901234567890n; 
 console.log(`value: ${bigInt}, type: ${typeof bigInt}`);
 Number.MAX_SAFE_INTEGER;
@@ -76,7 +84,7 @@ console.log(`value: ${greeting}, type: ${typeof greeting}`);
 // template literals (string)
 const helloBob = `hi ${brendan}!`;
 console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
-// compare
+// compare (백태그와 달러를 사용하지 않는다면..)
 console.log('value: ' + helloBob + ' type: ' + typeof helloBob);
 
 
@@ -111,10 +119,11 @@ const ellie = {name:'ellie', age:20};
 ellie.age = 21;
 
 
+
 // 5. Dynamic typing: dynamically typed language
 let text = 'hello';
 console.log(text.charAt(0)); 
-console.log(`value: ${text}, type: ${text}`);
+console.log(`value: ${text}, type: ${typeof text}`);
 text = 1;
 console.log(`value: ${text}, type: ${typeof text}`);
 text = '7' + 5;
