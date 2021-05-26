@@ -150,7 +150,7 @@ console.log(sumAgain(1,3));
 
 
 // 2. Callback function using function expression
-// 매개변수도 함수로 받는다 
+// 매개변수도 함수로 받을 수 있다 
 function randomQuiz(answer, printYes, printNo) {
     if(answer === 'love you') {
         printYes();
