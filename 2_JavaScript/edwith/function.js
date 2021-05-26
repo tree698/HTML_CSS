@@ -1,5 +1,15 @@
 'use strict';
 
+
+// 1. Function declaration
+// function name(param1, param2) { body... return}
+// one function === one thing
+// naming: doSomething, command, verb
+// e.g. createCaredAndPoint(x) --> createCard, createPoint
+// function is object in JS (변수에 저장, 파라미터로 전달 등)
+
+
+
 function printName(firstname) {
     var myname = "Chanwoo";
     return "Name is " + firstname + " " + myname;
