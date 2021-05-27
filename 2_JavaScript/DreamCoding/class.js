@@ -1,12 +1,28 @@
 'use strict';
 
+
+// class
+// - template 
+// - declare once 
+// - no data in 
+
+// object
+// - instance of a class 
+// - created many times 
+// - data in
+
+
+
+
 // 1. Class declarations
 class Person {
+    // constructor
     constructor(name, age) {
+        // fields
         this.name = name;
         this.age = age;
     }
-
+    // method
     speak() {
         console.log(`${this.name}: hello`);
     }
@@ -19,23 +35,26 @@ ellie.speak()
 
 
 
-// 2. Getter and setters
+// 2. Getter and setters (초기화가 필요한 곳에 private로 설정)
 class User {
     constructor(firstName, lastName, age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
     }
-
+    // getter
     get age() {
+        // 변수 이름을 다른 것으로..
         return this._age;
     }
-
+    // setter
     set age(value) {
         // if (value < 0) {
         //     throw Error('age can not be negative');
         // }
         // this._age = value;
+
+        // 변수 이름을 다른 것으로..
         this._age = value < 0 ? 0 : value;
     }
 }
@@ -100,6 +119,7 @@ console.log(rectangle.getArea());
 
 class Triangle extends Shape {
     draw() {
+        // 부모의 draw도 호출됨 (super)
         super.draw();
         console.log('TTTTTTT');
     }
