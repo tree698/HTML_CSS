@@ -141,4 +141,3 @@ console.log(triangle instanceof Shape);
 console.log(triangle instanceof Object);
 
 console.log(triangle.toString());
-
