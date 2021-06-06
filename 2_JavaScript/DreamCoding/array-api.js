@@ -1,4 +1,4 @@
-'use:strict';
+'use strict';
 
 // Q1. make a string out of an array
 {

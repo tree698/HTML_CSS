@@ -1,4 +1,4 @@
-'use:strict';
+'use strict';
 
 class UserStorage {
     loginUser(id, password) {

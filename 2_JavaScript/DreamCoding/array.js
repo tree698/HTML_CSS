@@ -1,4 +1,4 @@
-'use:strict';
+'use strict';
 
 // 1. Declaration
 const arr1 = new Array();

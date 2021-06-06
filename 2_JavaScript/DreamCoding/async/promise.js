@@ -1,4 +1,4 @@
-'use:strict';
+'use strict';
 
 // Promise is a JavaScript object for asychronous operation
 // State: pending -> fulfilled or rejected
