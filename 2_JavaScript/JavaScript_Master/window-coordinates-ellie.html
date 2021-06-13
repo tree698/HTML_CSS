@@ -18,6 +18,11 @@
         .special {
             background-color: lightsalmon;
         }
+        aside {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +34,11 @@
     <div class="special"></div>
     <div ></div>
     <div ></div>
+    <aside>
+        <button class="scroll-by">scroll by 100px(y)</button>
+        <button class="scroll-to">scroll to 100px(y)</button>
+        <button class="scroll-into">scroll into special</button>
+    </aside>
 
     <script>
         const special = document.querySelector('.special');
@@ -38,6 +48,9 @@
             console.log(`client: ${event.clientX}, ${event.clientY}`);
             console.log(`page: ${event.pageX}, ${event.pageY}`);
         });
+
+        const scroll-by = document.querySelector('.scroll-by');
+
     </script>
 </body>
 </html>
