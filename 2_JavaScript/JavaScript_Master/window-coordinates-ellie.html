@@ -49,7 +49,20 @@
             console.log(`page: ${event.pageX}, ${event.pageY}`);
         });
 
-        const scroll-by = document.querySelector('.scroll-by');
+        // 클래스를 가리키는 . 잊지 말자
+        const scrollBy = document.querySelector('.scroll-by');
+        const scrollTo = document.querySelector('.scroll-to');
+        const scrollInto = document.querySelector('.scroll-into');
+        scrollBy.addEventListener('click', () => {
+            // window.scrollBy(0, 100);
+            window.scrollBy({top: 100, left: 0, behavior: 'smooth'});
+        });
+        scrollTo.addEventListener('click', () => {
+            window.scrollTo(0, 100);
+        });
+        scrollInto.addEventListener('click', () => {
+            special.scrollIntoView();
+        });
 
     </script>
 </body>
