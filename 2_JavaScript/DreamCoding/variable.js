@@ -104,10 +104,10 @@ console.log(`value: ${nothing}, type: ${typeof nothig}`);
 let x;
 console.log(`value: ${x}, type: ${typeof x}`);
 
-// symbol, create unique identifiers for obects
+// symbol, create unique identifiers for objects
 const symbol1 = Symbol('id');
 const symbol2 = Symbol('id');
-console.log(symbol1 === symbol2);
+console.log(symbol1 === symbol2);   
 console.log(`value: ${symbol1.description}, type: ${typeof symbol1.description}`);
 
 const gsymbol1 = Symbol.for('id');
@@ -122,12 +122,15 @@ ellie.age = 21;
 
 // 5. Dynamic typing: dynamically typed language
 let text = 'hello';
+// .charAT(0)  => slicing
 console.log(text.charAt(0)); 
 console.log(`value: ${text}, type: ${typeof text}`);
 text = 1;
 console.log(`value: ${text}, type: ${typeof text}`);
+// 75
 text = '7' + 5;
 console.log(`value: ${text}, type: ${typeof text}`);
+// 4
 text = '8' / '2';
 console.log(`value: ${text}, type: ${typeof text}`);
 // hello에서 4로 변경되어 에러 발생
