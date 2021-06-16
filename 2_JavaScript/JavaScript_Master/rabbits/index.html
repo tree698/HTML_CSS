@@ -7,35 +7,42 @@
     <style>
       body {
         background-color: #000;
+        text-align: center;
       }
-      .game {
+      img {
         display: block;
-        margin: 0 auto;
+        margin: auto;
+      }
+      .button {
+
+        background-color: tomato;
+        color: #fff;
+        font-size: 32px;
+        margin: 16px 0;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game rabbit" src="img/rabbit.png" alt="토끼">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
-    <img class="game" src="img/carrot.png" alt="당근">
+    <button class="button">Find a rabbit 🐇</button>
+    <img src="img/carrot.png" alt="당근">
+    <img src="img/carrot.png" alt="당근">
+    <img src="img/carrot.png" alt="당근">
+    <img src="img/carrot.png" alt="당근">
+    <img src="img/carrot.png" alt="당근">
+    <img src="img/carrot.png" alt="당근">
+    <img src="img/carrot.png" alt="당근">
+    <img id="rabbit" src="img/rabbit.png" alt="토끼">
+    <img src="img/carrot.png" alt="당근">
+    <img src="img/carrot.png" alt="당근">
+    <img src="img/carrot.png" alt="당근">
+    <img src="img/carrot.png" alt="당근">
 
     <script>
-      const rabbit = document.querySelector('.rabbit');
-      window.addEventListener('click', () => {
-        rabbit.scrollIntoView();
+      const button = document.querySelector('.button');
+      const rabbit = document.querySelector('#rabbit');
+      button.addEventListener('click', () => {
+        rabbit.scrollIntoView({behavior: 'smooth', block:'center'});
         console.log('rabbit');
       });
     </script>
