@@ -4,9 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scroll</title>
-    <style></style>
+    <style>
+      body {
+        background-color: #000;
+      }
+      .game {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
-    <script></script>
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game rabbit" src="img/rabbit.png" alt="토끼">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+    <img class="game" src="img/carrot.png" alt="당근">
+
+    <script>
+      const rabbit = document.querySelector('.rabbit');
+      window.addEventListener('click', () => {
+        rabbit.scrollIntoView();
+        console.log('rabbit');
+      });
+    </script>
   </body>
 </html>
