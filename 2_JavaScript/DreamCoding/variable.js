@@ -39,6 +39,8 @@ var age;
 
 
 // 3. Constant
+// Immutable data types: premitive types, frozen objects (i.e object.freexe())
+// Mutable data types: all object by default are mytable in JS 
 // favor immutable data type always for a few reasons
 // - security, thread safety, reduce human mistakes
 const daysInWeek = 7;
