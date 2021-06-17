@@ -1,0 +1,19 @@
+Document Object Model (DOM)
+ - 브라우저가 어떻게 웹 페이지나 웹 어플리케이션을 분석하는지?
+ - 브라우저가 랜더링하는 순서 ==> CSS, 브라우저 성능에 영향? 
+
+html을 브라우저에서 읽고, 
+HTML tag ==> JavaScript Node 
+
+----------------
+EventTarget
+   => Node (모든 노드는 event를 발생시킴)
+          =>  Document
+          =>  Element (이미지 등)
+                   => HTMLElement
+                   	=> HTMLInputElement
+                   	=> HTMLDivElement
+                   	=> ...
+	      => ...
+          =>  Text 
+          =>  ...
