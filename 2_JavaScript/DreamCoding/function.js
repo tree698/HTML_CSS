@@ -150,7 +150,7 @@ console.log(sumAgain(1,3));
 
 
 // 2. Callback function using function expression
-// 매개변수도 함수로 받을 수 있다 
+// 매개변수로 함수도 받을 수 있다 
 function randomQuiz(answer, printYes, printNo) {
     if(answer === 'love you') {
         printYes();
@@ -190,4 +190,33 @@ const sumpleMultiply = (a, b) => {
 })();
 
 
+
+
+// (Quize) 💖
+// function calculate(command, a, b)
+// command: add, substract, divide, multiply, remainder
+function calculate (command, a, b) {
+    if (command === add) {
+        return a + b;
+    } else if (command === substract) {
+        return a - b;
+    } else if (command === divide) {
+        return a / b;
+    } else if (command === multiply) {
+        return a * b;
+    } else if (command === remainder) {
+        return a % b;
+    }
+}
+
+// switch calculate (command, a, b) {
+//     case 'add':
+//         return a + b;
+//         break;
+//     case 'substract':
+//         return a -b;
+//         break;
+// }
+
+console.log(calculate(substract, 1, 3));
 
