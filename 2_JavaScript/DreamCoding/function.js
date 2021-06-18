@@ -207,7 +207,7 @@ function calculate (command, a, b) {
     } else if (command === remainder) {
         return a % b;
     }
-}
+};
 
 // switch calculate (command, a, b) {
 //     case 'add':
