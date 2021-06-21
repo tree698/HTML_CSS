@@ -209,6 +209,25 @@ function calculate (command, a, b) {
     }
 };
 
+
+function calculate (command, a, b) {
+    switch (command) {
+        case 'add':
+            return a + b;
+        case 'substract':
+            return a - b;
+        case 'divide':
+            return a / b;
+        case 'multiply':
+            return a * b;
+        case 'remainer':
+            return a % b;
+        default:
+            throw Error('unknown command');
+    }
+}
+
+
 // switch calculate (command, a, b) {
 //     case 'add':
 //         return a + b;

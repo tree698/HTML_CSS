@@ -11,6 +11,10 @@
 // - created many times 
 // - data in
 
+// JavaScript classess
+// - introduced in ES6
+// - syntactical sugar over prototype-based inheritance
+
 
 
 
@@ -57,6 +61,8 @@ class User {
         // 변수 이름을 다른 것으로..
         this._age = value < 0 ? 0 : value;
     }
+    // getter and setter안에 변수는 다른 이름을 사용한다 ex) _age 
+    // 그렇지 않으면 반복적으로 순환하게 된다 
 }
 
 const user1 = new User('steven', 'job', -1);
@@ -65,17 +71,20 @@ console.log(user1.age);
 
 
 // 3. Fields (public, private)
+// Too soon!
 class Experiment {
     publicField = 2;
     #privateField = 0;
 }
 const experiment = new Experiment();
 console.log(experiment.publicField);
+// undefined
 console.log(experiment.privateField);
 
 
 
-// 4. Static properties and methods
+// 4. Static properties and methods\
+// Too soon!
 class Article {
     static publisher = 'Dream Coding';
     constructor (articleNumber) {
