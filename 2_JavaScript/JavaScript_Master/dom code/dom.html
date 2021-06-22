@@ -46,7 +46,7 @@
       const img = document.querySelector('img');
       console.log(img)
 
-      // 예전에는 document.getElementBYID를 사용
+      // 예전에는 document.getElementBy~ 를 사용
       const brand = document.getElementById('brand')
       console.log(brand)
 
@@ -59,6 +59,7 @@
       console.log(img_all);
 
       // DOM 요소를 생성하고 속성/내용 추가 후 html에 표시 => appendChild (마지막에 추가)
+      // appendChild  vs  append (최근 추가됨)
       const section = document.querySelector('section');
       const h4 = document.createElement('h4');
       h4.setAttribute('class', 'last_adding');
