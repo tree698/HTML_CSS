@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_lNhRQNGcEeuXt_XN-bnB1Q" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_lNhRQdGcEeuXt_XN-bnB1Q" bindingContexts="_lNhRStGcEeuXt_XN-bnB1Q">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; tooltip=&quot;myWeb/src/main/resources/templates/index.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/myWeb/src/main/resources/templates/index.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; tooltip=&quot;C:\Users\COM\Desktop\GreenLab9-master\myWeb\src\main\resources\templates\index.html&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/COM/Desktop/GreenLab9-master/myWeb/src/main/resources/templates/index.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;PyCharm Community Edition 2020.3.3 x64.lnk&quot; tooltip=&quot;C:\Users\Public\Desktop\PyCharm Community Edition 2020.3.3 x64.lnk&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/Public/Desktop/PyCharm%20Community%20Edition%202020.3.3%20x64.lnk&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; tooltip=&quot;myWeb/src/main/resources/templates/index.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/myWeb/src/main/resources/templates/index.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; tooltip=&quot;C:\Users\COM\Desktop\GreenLab9-master\myWeb\src\main\resources\templates\index.html&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/COM/Desktop/GreenLab9-master/myWeb/src/main/resources/templates/index.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_lNhRQdGcEeuXt_XN-bnB1Q" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_mPXv0tGcEeuXt_XN-bnB1Q" label="%trimmedwindow.label.eclipseSDK" x="130" y="130" width="1024" height="768">
@@ -203,7 +203,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_mnLL0NGcEeuXt_XN-bnB1Q" elementId="org.eclipse.ui.editorss" selectedElement="_mnLL0dGcEeuXt_XN-bnB1Q">
-      <children xsi:type="basic:PartStack" xmi:id="_mnLL0dGcEeuXt_XN-bnB1Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Gp2dINGoEeuXt_XN-bnB1Q">
+      <children xsi:type="basic:PartStack" xmi:id="_mnLL0dGcEeuXt_XN-bnB1Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_pDCMkNKUEeuABI20LIUCpQ">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -218,6 +218,12 @@
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_pDCMkNKUEeuABI20LIUCpQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PyCharm Community Edition 2020.3.3 x64.lnk" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;PyCharm Community Edition 2020.3.3 x64.lnk&quot; partName=&quot;PyCharm Community Edition 2020.3.3 x64.lnk&quot; title=&quot;PyCharm Community Edition 2020.3.3 x64.lnk&quot; tooltip=&quot;C:\Users\Public\Desktop\PyCharm Community Edition 2020.3.3 x64.lnk&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/C:/Users/Public/Desktop/PyCharm%20Community%20Edition%202020.3.3%20x64.lnk&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.ui.DefaultTextEditor</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
         </children>
@@ -226,7 +232,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_mnXZENGcEeuXt_XN-bnB1Q" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.navigator.resources.ProjectExplorer"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.navigator.resources"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1624175629930&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_nExGwNGcEeuXt_XN-bnB1Q" elementId="org.eclipse.ui.navigator.ProjectExplorer">
@@ -356,7 +362,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_mdZkwNGcEeuXt_XN-bnB1Q" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mdgScNGcEeuXt_XN-bnB1Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_lOfhrdGcEeuXt_XN-bnB1Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_maOXQNKUEeuABI20LIUCpQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_lOfhrdGcEeuXt_XN-bnB1Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_mdZkwdGcEeuXt_XN-bnB1Q" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -368,6 +374,9 @@
       <children xsi:type="menu:ToolBar" xmi:id="_mdZkxNGcEeuXt_XN-bnB1Q" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_mdZkxdGcEeuXt_XN-bnB1Q" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_pJHmcNKUEeuABI20LIUCpQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_m7PXUNGcEeuXt_XN-bnB1Q" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
@@ -390,7 +399,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_mdaL0NGcEeuXt_XN-bnB1Q" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mdg5hdGcEeuXt_XN-bnB1Q" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_lOe6kNGcEeuXt_XN-bnB1Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_maTPwNKUEeuABI20LIUCpQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_lOe6kNGcEeuXt_XN-bnB1Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_mdaL0dGcEeuXt_XN-bnB1Q" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3089,7 +3098,7 @@
   <addons xmi:id="_lNhRVtGcEeuXt_XN-bnB1Q" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_lNhRV9GcEeuXt_XN-bnB1Q" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_lNwh0NGcEeuXt_XN-bnB1Q" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_k_5uUdKUEeuABI20LIUCpQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_lORfMNGcEeuXt_XN-bnB1Q" elementId="org.springframework.tooling.ls.eclipse.gotosymbol.commands.category" name="STS4"/>
   <categories xmi:id="_lORfMdGcEeuXt_XN-bnB1Q" elementId="org.eclipse.ui.category.edit" name="Edit"/>
