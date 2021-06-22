@@ -2,7 +2,7 @@
 // one of the JavaScript's data types
 // a collection of related data and/or functionality
 // Nearly all objects in JavaScript are instances of Object
-// object = { key : value};
+// object = { key : value};  
 
 
 // console.clear();
@@ -45,6 +45,7 @@ function printValue(obj, key) {
     console.log(obj[key]);
 }
 // key 값으로 name과 age 등이 올수 있다. 
+// key는 항상 string type으로...
 printValue(ellie, 'name');
 printValue(ellie, 'age')
 
