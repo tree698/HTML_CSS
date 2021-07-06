@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <img src="/MDN/img/puppy.jpg" alt="루피"><br>
+    <button>Change user</button>
+
+    <script>
+        // Adding an image changer
+        let myImg = document.querySelector('img');
+
+        myImg.onclick = function() {
+            let mySrc = myImg.getAttribute('src');
+            if(mySrc === '/MDN/img/puppy.jpg') {
+                myImg.setAttribute('src', '/MDN/img/flower.jpg')
+            } else {
+                myImg.setAttribute('src', '/MDN/img/puppy.jpg')
+            }
+        }
+
+        // Adding a personalized welcome message
+
+    </script>
+</body>
+</html>
