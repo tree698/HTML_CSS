@@ -18,6 +18,7 @@
 <body>
     <img src="/MDN/img/puppy.jpg" alt="루피"><br>
     <button>Change user</button>
+    <h1>What do you think about my puppy?</h1>
 
     <script>
         // Adding an image changer
@@ -33,6 +34,30 @@
         }
 
         // Adding a personalized welcome message
+        let myButton = document.querySelector('button');
+        let myHeading = document. querySelector('h1');
+
+        function setUserName () {
+            let myName = prompt('Enter your think!');
+            if(!myName) {
+                setUserName()
+            } else {
+                localStorage.setItem('name', myName);
+                myHeading.innerHTML = 'Cool, ' + myName;
+            }
+        }
+
+        if(!localStorage.getItem('name')) {
+            setUserName();
+        } else {
+            let storedName = localStorage.getItem('name');
+            myHeading.textContent = 'Cool, ' + storedName;
+        }
+
+        myButton.onclick = function() {
+            setUserName();
+        }
+
 
     </script>
 </body>
